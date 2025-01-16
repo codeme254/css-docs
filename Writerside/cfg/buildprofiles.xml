@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <primary-color>#DC143C</primary-color>
+        <link-color>ruby</link-color>
+        <resizable-sidebar>true</resizable-sidebar>
+        <custom-favicons>logo.png</custom-favicons>
+
+        <!--        <download-title>Get Awesome App</download-title>-->
+        <!--        <download-page>https://example.com</download-page>-->
+        <!--        <showDownloadButton>true</showDownloadButton>-->
+    </variables>
+    <build-profile instance="in">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+
+    <footer>
+        <copyright>2025 Code Simplified</copyright>
+
+    </footer>
+</buildprofiles>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                  name="CSS"
+                  start-page="starter.md">
+
+    <toc-element topic="starter.md"/>
+    <toc-element topic="CSS-Syntax.md"/>
+    <toc-element topic="Adding-CSS-to-HTML.md"/>
+    <toc-element topic="Basic-CSS-selectors.md"/>
+    <toc-element topic="Colors.md"/>
+    <toc-element topic="CSS-Backgrounds.md"/>
+    <toc-element topic="CSS-Gradients.md"/>
+    <toc-element topic="Advanced-Selectors.md"/>
+    <toc-element topic="CSS-Text-Formatting.md"/>
+    <toc-element topic="CSS-Fonts.md"/>
+    <toc-element topic="CSS-Borders.md"/>
+    <toc-element topic="CSS-Margins.md"/>
+</instance-profile>
