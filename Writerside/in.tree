@@ -18,4 +18,5 @@
     <toc-element topic="CSS-Fonts.md"/>
     <toc-element topic="CSS-Borders.md"/>
     <toc-element topic="CSS-Margins.md"/>
+    <toc-element topic="CSS-Padding.md"/>
 </instance-profile>
