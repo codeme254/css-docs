@@ -1,6 +1,7 @@
 # CSS Text Formatting
 
 ## `color` property
+
 The color property in CSS is used to set the color of the text.
 
 It’s one of the most fundamental and widely used properties for styling web pages.
@@ -20,12 +21,15 @@ p {
   color: crimson;
 }
 ```
+
 ![color](color.png)
 
 ## `text-align` property
+
 The css `text-align` property is used to control horizontal alignment of text.
 
 The values for `text-align` property are:
+
 - **left**: aligns text to the left.
 - **right**: aligns text to the right.
 - **center**: centers the text horizontally.
@@ -44,98 +48,121 @@ The default value is left.
 ```
 
 **right align**
+
 ```CSS
 p {
   text-align: right;
 }
 ```
+
 ![right align](align-text-right.png)
 
 **center align**
+
 ```CSS
 p {
   text-align: center;
 }
 ```
+
 ![center align](align-text-center.png)
 
 **justify align**
+
 ```CSS
 p {
   text-align: justify;
 }
 ```
+
 ![justify align](align-text-justify.png)
 
 ## `text-align-last`
+
 The `text-align-last` property specifies the alignment of the last line of text.
 
 It also takes `left`, `right`, `center` and `justify` as its values.
 
 **Example 1: aligning the last line to the right**
+
 ```CSS
 p {
   text-align: justify;
   text-align-last: right;
 }
 ```
+
 ![text-align-last: right;](text-align-last-right.png)
 
 **Example 2: aligning the last line to the left**
+
 ```CSS
 p {
   text-align: justify;
   text-align-last: center;
 }
 ```
+
 ![text-align-last: center;](text-align-last-center.png)
 
 ## `text-transform`
+
 The `text-tranform` property is used to control the capitalization of text.
 
 The values are:
+
 - **none**: No transformation, the text appears as written.
 - **capitalize**: transforms the first letter of each word to uppercase.
 - **uppercase**: transforms all text to uppercase.
 - **lowercase**: transforms all text to lowercase.
 
 **capitalize**
+
 ```CSS
 p {
   text-transform: capitalize;
 }
 ```
+
 ![capitalize](capitalize.png)
 
 **uppercase**
+
 ```CSS
 p {
   text-transform: uppercase;
 }
 ```
+
 ![uppercase](uppercase.png)
 
 **lowercase**
+
 ```CSS
 p {
   text-transform: lowercase;
 }
 ```
+
 ![lowercase](lowercase.png)
 
 ## `text-decoration`
+
 The `text-decoration` property is used to set the appearance of decorative lines on a text.
 
 It is shorthand for the following properties:
+
 - **text-decoration-line**
 - **text-decoration-color**
 - **text-decoration-style**
 - **text-decoration-thickness**
 
 ### `text-decoration-line`
+
 Specify the type of line applied to text.
 
 Values:
+
 - **none**: no decoration (default).
 - **underline**: adds a line below the text.
 - **overline**: adds a line above the text.
@@ -169,6 +196,7 @@ Values:
 ![text decoration line](text-decoration-line.png)
 
 ### `text-decoration-color`
+
 Specifies the color of the line applied to text.
 
 ```CSS
@@ -191,9 +219,11 @@ Specifies the color of the line applied to text.
   text-decoration-color: rgb(15, 246, 19);
 }
 ```
+
 ![text decoration color](text-decoration-color.png)
 
 ### `text-decoration-thickness`
+
 Sets the thickness of the decoration line.
 
 ```CSS
@@ -219,12 +249,15 @@ Sets the thickness of the decoration line.
   text-decoration-thickness: 10px;
 }
 ```
+
 ![text decoration thickness](text-decoration-thickness.png)
 
 ### `text-decoration-style`
+
 Defines the style of the text decoration line.
 
 Values:
+
 - **solid**: (default) a single solid line.
 - **double**: two parallel lines.
 - **dotted**: a dotted line.
@@ -257,9 +290,11 @@ Values:
   text-decoration-style: double;
 }
 ```
+
 ![text decoration style](text-decoration-style.png)
 
 ### `text-decoration` shorthand
+
 The shorthand combines the above properties for compact declarations.
 
 There is no specific order for the declarations, however; for the declaration to take effect, you must specify
@@ -272,6 +307,7 @@ the `text-decoration-style` somewhere in the declaration.
 ```
 
 ## `text-indent`
+
 Defines the indentation of the first line of text in a block.
 
 ```HTML
@@ -289,14 +325,17 @@ Defines the indentation of the first line of text in a block.
       consequatur vel sunt perspiciatis corporis ea qui? Eligendi?
 </p>
 ```
+
 ```CSS
 p {
   text-indent: 150px;
 }
 ```
+
 ![text-indent](text-indent.png)
 
 ## `letter-spacing`
+
 Controls the spacing between characters in a text.
 
 ```CSS
@@ -304,9 +343,11 @@ p {
   letter-spacing: 5px;
 }
 ```
+
 ![letter spacing](letter-spacing.png)
 
 ## `line-height`
+
 This property controls the distance between lines of text.
 
 For the value, a good practice is to use a unit-less number, which will be multiplied by the element's font-size to
@@ -321,6 +362,7 @@ p {
 ![line height](line-height.png)
 
 ## `word-spacing`
+
 Specifies the spacing between words in a text.
 
 ```CSS
@@ -328,4 +370,5 @@ p {
   word-spacing: 20px;
 }
 ```
+
 ![word spacing](word-spacing.png)

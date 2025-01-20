@@ -1,11 +1,13 @@
 # Adding CSS to HTML
 
 There are three main ways to include CSS in HTML:
+
 - Inline CSS
 - Internal CSS
 - External CSS
 
 ## Inline CSS
+
 Inline CSS applies styles directly to an HTML element using the `style` attribute within the opening tag of the element.
 
 ```HTML
@@ -13,6 +15,7 @@ Inline CSS applies styles directly to an HTML element using the `style` attribut
 ```
 
 ## Internal CSS
+
 Internal CSS is defined within a `<style>` block inside the `<head>` section of the HTML document.
 
 It applies styles to elements within the same page.
@@ -36,10 +39,12 @@ It applies styles to elements within the same page.
 ```
 
 ## External CSS
-External CSS involves writing styles in a separate `.css` file and linking it to the HTML document using the `<link>` 
+
+External CSS involves writing styles in a separate `.css` file and linking it to the HTML document using the `<link>`
 tag in the `<head>` section.
 
 index.html:
+
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +59,7 @@ index.html:
 ```
 
 style.css
+
 ```CSS
 h1 {
     color: crimson;
@@ -62,6 +68,7 @@ h1 {
 ```
 
 ## Best practices when including CSS in HTML
+
 1. Use external CSS for most projects to keep your HTML clean and styles reusable.
 2. Avoid inline CSS unless absolutely necessary for one-off changes.
 3. Use internal CSS sparingly, mainly for prototyping or one-page designs.

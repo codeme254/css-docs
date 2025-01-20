@@ -7,14 +7,15 @@ A CSS selector is a pattern used to identify the HTML elements you want to style
 Think of selectors as a way to tell CSS: "Apply these styles to this element or group of elements.
 
 Some basic selectors are:
+
 - Class selectors
 - ID selector
 - Type/Element selector
 - Grouping selector
 - Universal selector
 
-
 ## Class Selector
+
 The class selector is used to target elements that have a specific `class` attribute.
 
 Classes are reusable, meaning you can apply the same class to multiple elements.
@@ -34,6 +35,7 @@ Classes are ideal for applying styles to multiple elements that share the same d
 ```
 
 ## ID Selector
+
 The ID selector targets a single element with a specific `id` attribute.
 
 IDs are unique, meaning each element can have only one ID, and no two elements should share the same ID.
@@ -50,6 +52,7 @@ IDs are unique, meaning each element can have only one ID, and no two elements s
 ```
 
 ## Type/Element Selector
+
 The type selector (also called the element selector) targets all elements of a specific HTML tag.
 
 For example, you can style all `<p>` tags or all `<h1>` tags.
@@ -70,6 +73,7 @@ p {
 ```
 
 ## Grouping Selector
+
 The grouping selector is used to apply the same styles to multiple elements by separating their selectors with a comma.
 
 This reduces repetition and makes the code more clean and efficient.
@@ -92,11 +96,13 @@ h1, p, h3, .text, #subtitle {
 ```
 
 ## Universal Selector
+
 The universal selector targets all elements in a webpage.
 
-It is represented by an asterisk (*).
+It is represented by an asterisk (\*).
 
 The universal selector is often used for resetting styles to ensure consistent behavior across browsers.
+
 ```HTML
 <h1>This is a heading</h1>
 <p>This is a paragraph</p>
