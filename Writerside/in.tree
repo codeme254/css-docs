@@ -30,4 +30,5 @@
     <toc-element topic="Shadow-Effects.md"/>
     <toc-element topic="2D-Transformations.md"/>
     <toc-element topic="CSS-Transitions.md"/>
+    <toc-element topic="CSS-Animations.md"/>
 </instance-profile>
