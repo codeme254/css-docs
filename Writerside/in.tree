@@ -31,4 +31,5 @@
     <toc-element topic="2D-Transformations.md"/>
     <toc-element topic="CSS-Transitions.md"/>
     <toc-element topic="CSS-Animations.md"/>
+    <toc-element topic="CSS-Custom-properties-variables.md"/>
 </instance-profile>
