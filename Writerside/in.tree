@@ -32,4 +32,8 @@
     <toc-element topic="CSS-Transitions.md"/>
     <toc-element topic="CSS-Animations.md"/>
     <toc-element topic="CSS-Custom-properties-variables.md"/>
+    <toc-element topic="CSS-Flexbox.md">
+        <toc-element topic="Flex-Container.md"/>
+        <toc-element topic="Flex-Items.md"/>
+    </toc-element>
 </instance-profile>
