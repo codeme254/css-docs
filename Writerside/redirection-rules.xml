@@ -10,4 +10,8 @@
         <description>Created after removal of "colors" from CSS</description>
         <accepts>colors.html</accepts>
     </rule>
+    <rule id="62d7ea13">
+        <description>Created after removal of "Set Up" from CSS</description>
+        <accepts>Set-Up.html</accepts>
+    </rule>
 </rules>

@@ -36,4 +36,10 @@
         <toc-element topic="Flex-Container.md"/>
         <toc-element topic="Flex-Items.md"/>
     </toc-element>
+    <toc-element topic="CSS-Grid.md">
+        <toc-element topic="Our-First-CSS-Grid.md"/>
+        <toc-element topic="The-repeat-keyword-and-fr-unit.md"/>
+        <toc-element topic="Positioning-Grid-Items.md"/>
+        <toc-element topic="Spanning-Grid-Items.md"/>
+    </toc-element>
 </instance-profile>
