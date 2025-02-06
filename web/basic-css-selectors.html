@@ -1,0 +1,62 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.593319"><title>Basic CSS selectors | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"class-selector","level":0,"title":"Class Selector","anchor":"#class-selector"},{"id":"id-selector","level":0,"title":"ID Selector","anchor":"#id-selector"},{"id":"type-element-selector","level":0,"title":"Type/Element Selector","anchor":"#type-element-selector"},{"id":"grouping-selector","level":0,"title":"Grouping Selector","anchor":"#grouping-selector"},{"id":"universal-selector","level":0,"title":"Universal Selector","anchor":"#universal-selector"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Basic CSS selectors | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/basic-css-selectors.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Basic CSS selectors | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/basic-css-selectors.html#webpage",
+    "url": "writerside-documentation/basic-css-selectors.html",
+    "name": "Basic CSS selectors | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Basic-CSS-selectors" data-main-title="Basic CSS selectors" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Basic-CSS-selectors" id="Basic-CSS-selectors.md">Basic CSS selectors</h1><p id="-q1vds4_3">To style elements on a webpage, CSS relies on selectors to target specific HTML elements.</p><p id="-q1vds4_4">A CSS selector is a pattern used to identify the HTML elements you want to style.</p><p id="-q1vds4_5">Think of selectors as a way to tell CSS: &quot;Apply these styles to this element or group of elements.</p><p id="-q1vds4_6">Some basic selectors are:</p><ul class="list _bullet" id="-q1vds4_7"><li class="list__item" id="-q1vds4_13"><p>Class selectors</p></li><li class="list__item" id="-q1vds4_14"><p>ID selector</p></li><li class="list__item" id="-q1vds4_15"><p>Type/Element selector</p></li><li class="list__item" id="-q1vds4_16"><p>Grouping selector</p></li><li class="list__item" id="-q1vds4_17"><p>Universal selector</p></li></ul><section class="chapter"><h2 id="class-selector" data-toc="class-selector">Class Selector</h2><p id="-q1vds4_18">The class selector is used to target elements that have a specific <code class="code" id="-q1vds4_23">class</code> attribute.</p><p id="-q1vds4_19">Classes are reusable, meaning you can apply the same class to multiple elements.</p><p id="-q1vds4_20">Classes are ideal for applying styles to multiple elements that share the same design.</p><div class="code-block" data-lang="markup">
+&lt;p class=&quot;text&quot;&gt;The sky is blue.&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;The grass is green.&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+.text {
+  font-size: 18px;
+  color: crimson;
+}
+</div></section><section class="chapter"><h2 id="id-selector" data-toc="id-selector">ID Selector</h2><p id="-q1vds4_24">The ID selector targets a single element with a specific <code class="code" id="-q1vds4_28">id</code> attribute.</p><p id="-q1vds4_25">IDs are unique, meaning each element can have only one ID, and no two elements should share the same ID.</p><div class="code-block" data-lang="markup">
+&lt;h1 id=&quot;title&quot;&gt;A good day&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+#title {
+  font-size: 24px;
+  color: crimson;
+}
+</div></section><section class="chapter"><h2 id="type-element-selector" data-toc="type-element-selector">Type/Element Selector</h2><p id="-q1vds4_29">The type selector (also called the element selector) targets all elements of a specific HTML tag.</p><p id="-q1vds4_30">For example, you can style all <code class="code" id="-q1vds4_34">&lt;p&gt;</code> tags or all <code class="code" id="-q1vds4_35">&lt;h1&gt;</code> tags.</p><p id="-q1vds4_31">Element selector is useful for applying general styles across a webpage.</p><div class="code-block" data-lang="markup">
+&lt;p&gt;The sky is blue.&lt;/p&gt;
+&lt;p&gt;The grass is green.&lt;/p&gt;
+&lt;p&gt;It's a beautiful day.&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+p {
+  font-size: 18px;
+  color: crimson;
+}
+</div></section><section class="chapter"><h2 id="grouping-selector" data-toc="grouping-selector">Grouping Selector</h2><p id="-q1vds4_36">The grouping selector is used to apply the same styles to multiple elements by separating their selectors with a comma.</p><p id="-q1vds4_37">This reduces repetition and makes the code more clean and efficient.</p><p id="-q1vds4_38">The grouping selector is ideal for applying common styles to multiple elements.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;h3&gt;This is a subheading&lt;/h3&gt;
+&lt;p class=&quot;text&quot;&gt;This is more text&lt;/p&gt;
+&lt;h4 id=&quot;subtitle&quot;&gt;This is a subtitle&lt;/h4&gt;
+</div><div class="code-block" data-lang="css">
+h1, p, h3, .text, #subtitle {
+  color: crimson;
+  font-size: 18px;
+}
+</div></section><section class="chapter"><h2 id="universal-selector" data-toc="universal-selector">Universal Selector</h2><p id="-q1vds4_41">The universal selector targets all elements in a webpage.</p><p id="-q1vds4_42">It is represented by an asterisk (*).</p><p id="-q1vds4_43">The universal selector is often used for resetting styles to ensure consistent behavior across browsers.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;h3&gt;This is a subheading&lt;/h3&gt;
+&lt;p class=&quot;text&quot;&gt;This is more text&lt;/p&gt;
+&lt;h4 id=&quot;subtitle&quot;&gt;This is a subtitle&lt;/h4&gt;
+</div><div class="code-block" data-lang="css">
+* {
+  font-size: 18px;
+  color: crimson;
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="adding-css-to-html.html" class="navigation-links__prev">Adding CSS to HTML</a><a href="colors.html" class="navigation-links__next">Colors</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

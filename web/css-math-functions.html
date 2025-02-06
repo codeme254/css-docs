@@ -1,0 +1,54 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.541825"><title>CSS Math functions | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"calc","level":0,"title":"calc()","anchor":"#calc"},{"id":"max","level":0,"title":"max()","anchor":"#max"},{"id":"min","level":0,"title":"min()","anchor":"#min"},{"id":"clamp","level":0,"title":"clamp()","anchor":"#clamp"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Math functions | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-math-functions.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Math functions | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-math-functions.html#webpage",
+    "url": "writerside-documentation/css-math-functions.html",
+    "name": "CSS Math functions | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Math-functions" data-main-title="CSS Math functions" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Math-functions" id="CSS-Math-functions.md">CSS Math functions</h1><p id="fe8w77_3">CSS math functions allow dynamic calculations for values in your styles, providing flexibility and responsiveness.</p><p id="fe8w77_4">There's a wide variety of math functions, but in this guide we will focus on the four most commonly used math functions:</p><ul class="list _bullet" id="fe8w77_5"><li class="list__item" id="fe8w77_11"><p>calc()</p></li><li class="list__item" id="fe8w77_12"><p>max()</p></li><li class="list__item" id="fe8w77_13"><p>min()</p></li><li class="list__item" id="fe8w77_14"><p>clamp()</p></li></ul><p id="fe8w77_6"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#math_functions" id="fe8w77_15" data-external="true" rel="noopener noreferrer">More CSS functions are here</a></p><section class="chapter"><h2 id="calc" data-toc="calc"><code class="code" id="fe8w77_21">calc()</code></h2><p id="fe8w77_17">The calc() function lets you specify CSS property values using addition, subtraction, multiplication, and division.\</p><p id="fe8w77_18">It is often used to combine two CSS values that have different units, such as % and px.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: calc(100% - 150px);
+}
+</div><figure id="fe8w77_20"><img alt="calc" src="images/calc.png" title="calc" width="876" height="70"></figure></section><section class="chapter"><h2 id="max" data-toc="max"><code class="code" id="fe8w77_25">max()</code></h2><p id="fe8w77_23">The max() function selects the largest value from a comma-separated list.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: max(10vw, 400px, 50%);
+}
+</div></section><section class="chapter"><h2 id="min" data-toc="min"><code class="code" id="fe8w77_29">min()</code></h2><p id="fe8w77_27">The min() function selects the smallest value from a comma-separated list.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: min(10vw, 400px, 50%);
+}
+</div></section><section class="chapter"><h2 id="clamp" data-toc="clamp"><code class="code" id="fe8w77_43">clamp()</code></h2><p id="fe8w77_31">It sets a value that is constrained between a minimum, preferred, and maximum value.</p><p id="fe8w77_32">We can combine the functions of min() and max() by using clamp(). The clamp() math function takes a minimum value, the value to be clamped, and the maximum value as arguments.</p><div class="code-block" data-lang="css">
+property: clamp(min-value, clamp-value, max-value);
+</div><p id="fe8w77_34">If the value to be clamped is less than the passed minimum value, the function will return the minimum value.</p><p id="fe8w77_35">If the value to be clamped is greater than the passed maximum value, the function will return the maximum value.</p><p id="fe8w77_36">If the value to be clamped is between the passed minimum and maximum values, the function will return the original value to be clamped.</p><p id="fe8w77_37">In the code below, the width of the element will end up being 30rem the value is between the passed minimum and maximum values.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: clamp(10rem, 30rem, 55rem);
+}
+</div><p id="fe8w77_39">In the code below, the width of the element will be 20rem because the clamp value is greater than the maximum value.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: clamp(10rem, 30rem, 20rem);
+}
+</div><p id="fe8w77_41">In the code below, the width of the element will be 10 rem because the clamp value is less than the minimum value.</p><div class="code-block" data-lang="css">
+div {
+  background-color: red;
+  height: 30px;
+  width: clamp(10rem, 3rem, 20rem);
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-overflow.html" class="navigation-links__prev">CSS Overflow</a><a href="shadow-effects.html" class="navigation-links__next">Shadow Effects</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

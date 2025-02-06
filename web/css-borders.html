@@ -1,0 +1,132 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.541825"><title>CSS Borders | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"border-style","level":0,"title":"border-style","anchor":"#border-style"},{"id":"border-width","level":0,"title":"border-width","anchor":"#border-width"},{"id":"border-color","level":0,"title":"border-color","anchor":"#border-color"},{"id":"the-border-shorthand","level":0,"title":"The border shorthand","anchor":"#the-border-shorthand"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Borders | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-borders.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Borders | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-borders.html#webpage",
+    "url": "writerside-documentation/css-borders.html",
+    "name": "CSS Borders | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Borders" data-main-title="CSS Borders" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Borders" id="CSS-Borders.md">CSS Borders</h1><p id="cftybu_3">In CSS, a border is a property that defines the edge of an element, separating its content from the surrounding elements.</p><p id="cftybu_4">CSS provides us with a variety of properties to help us work with borders.</p><section class="chapter"><h2 id="border-style" data-toc="border-style"><code class="code" id="cftybu_18">border-style</code></h2><p id="cftybu_10">The border-style property in CSS defines the appearance of an element's border.</p><p id="cftybu_11">It determines how the border line will be displayed.</p><p id="cftybu_12">The key values are:</p><ul class="list _bullet" id="cftybu_13"><li class="list__item" id="cftybu_19"><p><span class="control" id="cftybu_28">none</span>: No border is displayed (default for most elements).</p></li><li class="list__item" id="cftybu_20"><p><span class="control" id="cftybu_29">solid</span>: A single, continuous line.</p></li><li class="list__item" id="cftybu_21"><p><span class="control" id="cftybu_30">dotted</span>: A series of dots forming the border.</p></li><li class="list__item" id="cftybu_22"><p><span class="control" id="cftybu_31">dashed</span>: A series of short dashes.</p></li><li class="list__item" id="cftybu_23"><p><span class="control" id="cftybu_32">double</span>: Two solid lines with a small gap between them.</p></li><li class="list__item" id="cftybu_24"><p><span class="control" id="cftybu_33">groove</span>: A carved effect, giving the appearance of the border being grooved into the page.</p></li><li class="list__item" id="cftybu_25"><p><span class="control" id="cftybu_34">ridge</span>: The opposite of groove, appearing as though the border is coming out of the page.</p></li><li class="list__item" id="cftybu_26"><p><span class="control" id="cftybu_35">inset</span>: Gives the impression that the border is embedded into the element.</p></li><li class="list__item" id="cftybu_27"><p><span class="control" id="cftybu_36">outset</span>: Makes the border appear as though it is coming out from the element.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;h2 class=&quot;none&quot;&gt;None&lt;/h2&gt;
+&lt;h2 class=&quot;solid&quot;&gt;solid&lt;/h2&gt;
+&lt;h2 class=&quot;dotted&quot;&gt;dotted&lt;/h2&gt;
+&lt;h2 class=&quot;dashed&quot;&gt;dashed&lt;/h2&gt;
+&lt;h2 class=&quot;double&quot;&gt;double&lt;/h2&gt;
+&lt;h2 class=&quot;groove&quot;&gt;groove&lt;/h2&gt;
+&lt;h2 class=&quot;ridge&quot;&gt;ridge&lt;/h2&gt;
+&lt;h2 class=&quot;inset&quot;&gt;inset&lt;/h2&gt;
+&lt;h2 class=&quot;outset&quot;&gt;outset&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+.none {
+  border-style: none;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.dotted {
+  border-style: dotted;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.double {
+  border-style: double;
+}
+
+.groove {
+  border-style: groove;
+}
+
+.ridge {
+  border-style: ridge;
+}
+
+.inset {
+  border-style: inset;
+}
+
+.outset {
+  border-style: outset;
+}
+</div><figure id="cftybu_16"><img alt="border-style" src="images/border-style.png" title="border-style" width="990" height="679"></figure><section class="chapter"><h3 id="applying-border-style-to-individual-sides" data-toc="applying-border-style-to-individual-sides">Applying <code class="code" id="cftybu_43">border-style</code> to individual sides</h3><p id="cftybu_38">You can also apply <code class="code" id="cftybu_44">border-style</code> to each side individually:</p><ul class="list _bullet" id="cftybu_39"><li class="list__item" id="cftybu_45"><p><span class="control" id="cftybu_49">border-top-style</span>: applies <code class="code" id="cftybu_50">border-style</code> to the top side.</p></li><li class="list__item" id="cftybu_46"><p><span class="control" id="cftybu_51">border-bottom-style</span>: applies <code class="code" id="cftybu_52">border-style</code> to the bottom side.</p></li><li class="list__item" id="cftybu_47"><p><span class="control" id="cftybu_53">border-left-style</span>: applies <code class="code" id="cftybu_54">border-style</code> to the left side.</p></li><li class="list__item" id="cftybu_48"><p><span class="control" id="cftybu_55">border-right-style</span>: applies <code class="code" id="cftybu_56">border-style</code> to the right side.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;h2&gt;Hello world&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: dashed;
+  border-left-style: double;
+}
+</div><figure id="cftybu_42"><img alt="applying border-style to individual sides" src="images/border-style-to-individual-sides.png" title="applying border-style to individual sides" width="959" height="126"></figure></section></section><section class="chapter"><h2 id="border-width" data-toc="border-width"><code class="code" id="cftybu_67">border-width</code></h2><p id="cftybu_58">The border-width property in CSS specifies the thickness of an element's border.</p><p id="cftybu_59">It determines how wide the border lines will be.</p><p id="cftybu_60">As for the values, you can use any length unit e.g 5px, 3em, 10rem, e.t.c., or use keywords; <code class="code" id="cftybu_68">thin</code>, <code class="code" id="cftybu_69">medium</code> and <code class="code" id="cftybu_70">thick</code>.</p><p id="cftybu_61">Note that the <code class="code" id="cftybu_71">border-style</code> must have been defined for this to work.</p><div class="code-block" data-lang="markup">
+&lt;h2&gt;Hello world&lt;/h2&gt;
+&lt;h2 class=&quot;thin&quot;&gt;thin&lt;/h2&gt;
+&lt;h2 class=&quot;medium&quot;&gt;medium&lt;/h2&gt;
+&lt;h3 class=&quot;thick&quot;&gt;thick&lt;/h3&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border-style: solid;
+  border-width: 5px;
+}
+
+.thin {
+  border-style: solid;
+  border-width: thin;
+}
+
+.medium {
+  border-style: solid;
+  border-width: medium;
+}
+
+.thick {
+  border-style: solid;
+  border-width: thick;
+}
+</div><figure id="cftybu_64"><img alt="border-width" src="images/border-width.png" title="border-width" width="954" height="539"></figure><section class="chapter"><h3 id="applying-border-border-width-to-individual-sides" data-toc="applying-border-border-width-to-individual-sides">Applying border <code class="code" id="cftybu_77">border-width</code> to individual sides</h3><p id="cftybu_73">You can specify different widths for each side.</p><ul class="list _bullet" id="cftybu_74"><li class="list__item" id="cftybu_78"><p><span class="control" id="cftybu_82">border-top-width</span>: for the top side.</p></li><li class="list__item" id="cftybu_79"><p><span class="control" id="cftybu_83">border-bottom-width</span>: for the bottom side.</p></li><li class="list__item" id="cftybu_80"><p><span class="control" id="cftybu_84">border-right-width</span>: for the right side.</p></li><li class="list__item" id="cftybu_81"><p><span class="control" id="cftybu_85">border-left-width</span>: for the left side.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border-style: solid;
+  border-top-width: 5px;
+  border-right-width: 15px;
+  border-bottom-width: 20px;
+  border-left-width: 3px;
+}
+</div><figure id="cftybu_76"><img alt="individual sides border-width" src="images/individual-sides-border-width.png" title="individual sides border-width" width="975" height="159"></figure></section><section class="chapter"><h3 id="border-width-shorthands" data-toc="border-width-shorthands"><code class="code" id="cftybu_88">border-width</code> shorthands</h3><ul class="list _bullet" id="cftybu_87"><li class="list__item" id="cftybu_89"><p><span class="control" id="cftybu_93">one value</span>: applies to all sides e.g., <code class="code" id="cftybu_94">border-width: 5px;</code>.</p></li><li class="list__item" id="cftybu_90"><p><span class="control" id="cftybu_95">two values</span>: first value is for top and bottom, second is for left and right, example, <code class="code" id="cftybu_96">border-width: 10px 20px;</code>.</p></li><li class="list__item" id="cftybu_91"><p><span class="control" id="cftybu_97">three values</span>: first is for top, second is for left and right and third is for bottom, example, <code class="code" id="cftybu_98">border-width: 35px 15px 90px;</code>.</p></li><li class="list__item" id="cftybu_92"><p><span class="control" id="cftybu_99">four values</span>: specifies top, right, bottom and left in that order, example, <code class="code" id="cftybu_100">border-width: 5px 10px 15px 20px;</code>.</p></li></ul></section></section><section class="chapter"><h2 id="border-color" data-toc="border-color"><code class="code" id="cftybu_106">border-color</code></h2><p id="cftybu_102">The border-color property in CSS specifies the color of an element's border. It determines how the border lines will appear visually.</p><div class="code-block" data-lang="css">
+h2 {
+  border-style: solid;
+  border-width: 10px;
+  border-color: crimson;
+}
+</div><figure id="cftybu_104"><img alt="border-color" src="images/border-color.png" title="border-color" width="980" height="141"></figure><section class="chapter"><h3 id="applying-border-color-to-individual-sides" data-toc="applying-border-color-to-individual-sides">Applying <code class="code" id="cftybu_112">border-color</code> to individual sides</h3><p id="cftybu_108">You can also apply <code class="code" id="cftybu_113">border-color</code> to individual sides:</p><ul class="list _bullet" id="cftybu_109"><li class="list__item" id="cftybu_114"><p><span class="control" id="cftybu_118">border-top-color</span>: applies color to the top border.</p></li><li class="list__item" id="cftybu_115"><p><span class="control" id="cftybu_119">border-bottom-color</span>: applies color to the bottom border.</p></li><li class="list__item" id="cftybu_116"><p><span class="control" id="cftybu_120">border-left-color</span>: applies color to the left border.</p></li><li class="list__item" id="cftybu_117"><p><span class="control" id="cftybu_121">border-right-color</span>: applies color to the right border.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border-style: solid;
+  border-width: 10px;
+  border-top-color: crimson;
+  border-left-color: blue;
+  border-bottom-color: green;
+  border-right-color: orange;
+}
+</div><figure id="cftybu_111"><img alt="border color on individual sides" src="images/border-color-to-individual-sides.png" title="border color on individual sides" width="976" height="146"></figure></section></section><section class="chapter"><h2 id="the-border-shorthand" data-toc="the-border-shorthand">The <code class="code" id="cftybu_130">border</code> shorthand</h2><p id="cftybu_123">The border shorthand property in CSS allows you to set the border's width, style, and color in a single declaration.</p><p id="cftybu_124">Syntax:</p><div class="code-block" data-lang="css">
+border: [border-width] [border-style] [border-color];
+</div><p id="cftybu_126">Note that the order doesn't matter but you must pass the border style.</p><div class="code-block" data-lang="css">
+h2 {
+  border: red 5px solid;
+}
+</div><figure id="cftybu_128"><img alt="border shorthand" src="images/border-shorthand.png" title="border shorthand" width="973" height="112"></figure><section class="chapter"><h3 id="using-border-shorthand-on-individual-sides" data-toc="using-border-shorthand-on-individual-sides">Using <code class="code" id="cftybu_136">border</code> shorthand on individual sides</h3><p id="cftybu_132">You can apply the border shorthand for individual sides:</p><ul class="list _bullet" id="cftybu_133"><li class="list__item" id="cftybu_137"><p><span class="control" id="cftybu_141">border-top</span></p></li><li class="list__item" id="cftybu_138"><p><span class="control" id="cftybu_142">border-bottom</span></p></li><li class="list__item" id="cftybu_139"><p><span class="control" id="cftybu_143">border-left</span></p></li><li class="list__item" id="cftybu_140"><p><span class="control" id="cftybu_144">border-right</span></p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border-top: 2px dashed red;
+  border-right: pink dotted 5px;
+  border-bottom: double black 10px;
+  border-left: green 8px inset;
+}
+</div><figure id="cftybu_135"><img alt="border shorthand on individual sides" src="images/border-shorthand-on-individual-sides.png" title="border shorthand on individual sides" width="979" height="113"></figure></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-fonts.html" class="navigation-links__prev">CSS Fonts</a><a href="css-margins.html" class="navigation-links__next">CSS Margins</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

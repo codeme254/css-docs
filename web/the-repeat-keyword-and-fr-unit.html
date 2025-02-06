@@ -1,0 +1,57 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5639974"><title>The repeat keyword and fr unit | CSS</title><script type="application/json" id="virtual-toc-data">[]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="The repeat keyword and fr unit | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/the-repeat-keyword-and-fr-unit.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="The repeat keyword and fr unit | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/the-repeat-keyword-and-fr-unit.html#webpage",
+    "url": "writerside-documentation/the-repeat-keyword-and-fr-unit.html",
+    "name": "The repeat keyword and fr unit | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="The-repeat-keyword-and-fr-unit" data-main-title="The repeat keyword and fr unit" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="CSS-Grid.md|CSS Grid"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="The-repeat-keyword-and-fr-unit" id="The-repeat-keyword-and-fr-unit.md">The repeat keyword and fr unit</h1><p id="vgim3y_3">So far, we have been defining our rows and columns one by one:</p><div class="code-block" data-lang="css">
+grid-template-rows: 200px 200px;
+grid-template-columns: 200px 200px 200px;
+</div><p id="vgim3y_5">Imagine we had 10 rows, for example, each one 150px in height; it wouldn't make sense to have to define all of them one by one as we have been doing.</p><p id="vgim3y_6">In CSS Grid, we have the <code class="code" id="vgim3y_24">repeat</code> keyword which can help us to simplify this.</p><p id="vgim3y_7">Syntax:</p><div class="code-block" data-lang="css">
+grid-template-rows: repeat(NUMBER_OF_TIMES, SIZE);
+</div><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 150px);
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+</div><p id="vgim3y_10">Assuming we wanted the third column track to occupy more space, we can easily define that as shown:</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 150px) 300px;
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+</div><figure id="vgim3y_12"><img alt="bigger third column track" src="images/grid-bigger-third-column-track.png" title="bigger third column track" width="1547" height="526"></figure><p id="vgim3y_13">What if we want the third column track to occupy the rest of the grid container.</p><p id="vgim3y_14">In grid, we can use the <code class="code" id="vgim3y_25">fr</code> unit; this will make the track expand to occupy all the remaining space.</p><p id="vgim3y_15">The fr unit in CSS Grid stands for fractional unit.</p><p id="vgim3y_16">It is used to define a flexible portion of available space within a grid container.</p><p id="vgim3y_17">The fr unit distributes space proportionally among grid tracks (rows or columns).</p><ul class="list _bullet" id="vgim3y_18"><li class="list__item" id="vgim3y_26"><p><code class="code" id="vgim3y_29">1fr</code> means one fraction of the available space.</p></li><li class="list__item" id="vgim3y_27"><p><code class="code" id="vgim3y_30">2fr</code> means twice as much space as <code class="code" id="vgim3y_31">1fr</code>.</p></li><li class="list__item" id="vgim3y_28"><p>e.t.c..</p></li></ul><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 150px) 1fr;
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+</div><figure id="vgim3y_20"><img alt="Fr unit 1" src="images/fr-unit-1.png" title="Fr unit 1" width="1545" height="544"></figure><p id="vgim3y_21">We can use the fr unit to make our column tracks have the same width:</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+</div><figure id="vgim3y_23"><img alt="equal column tracks" src="images/equal-column-tracks.png" title="equal column tracks" width="1527" height="527"></figure><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="our-first-css-grid.html" class="navigation-links__prev">Our First CSS Grid</a><a href="positioning-grid-items.html" class="navigation-links__next">Positioning Grid Items</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

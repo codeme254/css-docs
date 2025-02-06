@@ -1,0 +1,78 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5902911"><title>Flex Container | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"flex-direction","level":0,"title":"flex-direction","anchor":"#flex-direction"},{"id":"justify-content","level":0,"title":"justify-content","anchor":"#justify-content"},{"id":"align-items","level":0,"title":"align-items","anchor":"#align-items"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Flex Container | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/flex-container.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Flex Container | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/flex-container.html#webpage",
+    "url": "writerside-documentation/flex-container.html",
+    "name": "Flex Container | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Flex-Container" data-main-title="Flex Container" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="CSS-Flexbox.md|CSS Flexbox"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Flex-Container" id="Flex-Container.md">Flex Container</h1><p id="-8sq0dm_3">when we set the display property of the container to flex, the elements will be aligned side by side as shown:</p><div class="code-block" data-lang="css">
+.container {
+  background-color: #ccc;
+  padding: 10px;
+
+  display: flex;
+}
+</div><figure id="-8sq0dm_5"><img alt="display: flex;" src="images/display-flex.png" title="display: flex;" width="820" height="191"></figure><section class="chapter"><h2 id="flex-direction" data-toc="flex-direction"><code class="code" id="-8sq0dm_20">flex-direction</code></h2><p id="-8sq0dm_10">The default value for the flex-direction is <code class="code" id="-8sq0dm_21">row</code>, and that is why the elements are side by side.</p><figure id="-8sq0dm_11"><img alt="flex-direction: row;" src="images/display-flex.png" title="flex-direction: row;" width="820" height="191"></figure><p id="-8sq0dm_12"><code class="code" id="-8sq0dm_22">row-reverse</code>:</p><div class="code-block" data-lang="css">
+.container {
+  background-color: #ccc;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+</div><figure id="-8sq0dm_14"><img alt="row-reverse" src="images/row-reverse.png" title="row-reverse" width="1881" height="198"></figure><p id="-8sq0dm_15">When we set the <code class="code" id="-8sq0dm_23">flex-direction</code> property to be column, the main axis now goes from top to bottom, and the items end up stacking on top of each other:</p><div class="code-block" data-lang="css">
+.container {
+  background-color: #ccc;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+</div><figure id="-8sq0dm_17"><img alt="flex-direction: column;" src="images/flex-direction-column.png" title="flex-direction: column;" width="1867" height="875"></figure><p id="-8sq0dm_18">Using <code class="code" id="-8sq0dm_24">column-reverse</code> makes the main axis go from bottom to top, and the items end up as shown below:</p><figure id="-8sq0dm_19"><img alt="flex-direction: column-reverse;" src="images/column-reverse.png" title="flex-direction: column-reverse;" width="1863" height="869"></figure></section><section class="chapter"><h2 id="justify-content" data-toc="justify-content"><code class="code" id="-8sq0dm_36">justify-content</code></h2><p id="-8sq0dm_26"><code class="code" id="-8sq0dm_37">center</code>: all the items are aligned to the center of the main axis.</p><div class="code-block" data-lang="css">
+.container {
+  display: flex;
+  justify-content: center;
+}
+</div><figure id="-8sq0dm_28"><img alt="justify-content: center;" src="images/justify-content-center.png" title="justify-content: center;" width="1901" height="189"></figure><p id="-8sq0dm_29"><code class="code" id="-8sq0dm_38">space-between</code>: the available space is evenly distributed between the flex items.</p><div class="code-block" data-lang="css">
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+</div><figure id="-8sq0dm_31"><img alt="justify-content: space-between;" src="images/justify-content-space-between.png" title="justify-content: space-between;" width="1893" height="185"></figure><p id="-8sq0dm_32"><code class="code" id="-8sq0dm_39">space-around</code>: puts the same amount of space on both the left side and right side of each flex item.</p><div class="code-block" data-lang="css">
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+</div><figure id="-8sq0dm_34"><img alt="justify-content: space-around;" src="images/justify-content-space-around.png" title="justify-content: space-around;" width="1896" height="191"></figure><p id="-8sq0dm_35"><span class="emphasis" id="-8sq0dm_40">experiment with space-evenly, flex-end and flex-start which is the default</span></p></section><section class="chapter"><h2 id="align-items" data-toc="align-items"><code class="code" id="-8sq0dm_54">align-items</code></h2><p id="-8sq0dm_42">To better visualize the working of <code class="code" id="-8sq0dm_55">align-items</code> property, let's change the height of one of the flex items.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;item i2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;5&lt;/div&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.i2 {
+  height: 200px;
+}
+</div><figure id="-8sq0dm_45"><img alt="align-items: stretch;" src="images/align-items-stretch.png" title="align-items: stretch;" width="1895" height="346"></figure><p id="-8sq0dm_46">Notice that all the elements end up getting the 200px height, this is because the initial value on align-items property is stretch.</p><p id="-8sq0dm_47"><code class="code" id="-8sq0dm_56">center</code>: center flex-items relative to the item which is taller/bigger in the vertical direction.</p><div class="code-block" data-lang="css">
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</div><figure id="-8sq0dm_49"><img alt="align-items: center;" src="images/align-items-center.png" title="align-items: center;" width="1893" height="322"></figure><p id="-8sq0dm_50"><code class="code" id="-8sq0dm_57">flex-start</code></p><div class="code-block" data-lang="css">
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+</div><figure id="-8sq0dm_52"><img alt="align-items: flex-start;" src="images/align-items-flex-start.png" title="align-items: flex-start;" width="1897" height="327"></figure><p id="-8sq0dm_53"><span class="emphasis" id="-8sq0dm_58">experiment with the flex-end value and baseline as well</span></p></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-flexbox.html" class="navigation-links__prev">CSS Flexbox</a><a href="flex-items.html" class="navigation-links__next">Flex Items</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

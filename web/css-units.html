@@ -1,0 +1,103 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6588333"><title>CSS Units | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"absolute-length-units","level":0,"title":"Absolute length units","anchor":"#absolute-length-units"},{"id":"relative-units","level":0,"title":"Relative Units","anchor":"#relative-units"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Units | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-units.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Units | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-units.html#webpage",
+    "url": "writerside-documentation/css-units.html",
+    "name": "CSS Units | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Units" data-main-title="CSS Units" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Units" id="CSS-Units.md">CSS Units</h1><p id="-oy5nry_3">As we have seen thus far, many CSS properties like <code class="code" id="-oy5nry_10">width</code>, <code class="code" id="-oy5nry_11">height</code>, <code class="code" id="-oy5nry_12">margin</code>, <code class="code" id="-oy5nry_13">padding</code> <code class="code" id="-oy5nry_14">font-size</code>, e.t.c., take a length.</p><p id="-oy5nry_4">CSS has many different ways of expressing lengths.</p><p id="-oy5nry_5">In CSS, length is a number and a unit with no whitespace. For example, <code class="code" id="-oy5nry_15">5px</code>.</p><p id="-oy5nry_6">There are two general kinds of units used for length and size in CSS:</p><ul class="list _bullet" id="-oy5nry_7"><li class="list__item" id="-oy5nry_16"><p>absolute</p></li><li class="list__item" id="-oy5nry_17"><p>relative</p></li></ul><section class="chapter"><h2 id="absolute-length-units" data-toc="absolute-length-units">Absolute length units</h2><p id="-oy5nry_18">These units represent fixed values and are not affected by the size of their parent or viewport. They are generally not responsive.</p><p id="-oy5nry_19">These units include:</p><ul class="list _bullet" id="-oy5nry_20"><li class="list__item" id="-oy5nry_25"><p><code class="code" id="-oy5nry_31">px</code> (pixels): 1 pixel is formally defined ad 1/96 of an inch. All other absolute length units are based on this definition of a pixel.</p></li><li class="list__item" id="-oy5nry_26"><p><code class="code" id="-oy5nry_32">cm</code> (centimeters): 1cm is roughly 37.8 pixels.</p></li><li class="list__item" id="-oy5nry_27"><p><code class="code" id="-oy5nry_33">mm</code> (millimeters): 1mm is roughly 3.78 pixels.</p></li><li class="list__item" id="-oy5nry_28"><p><code class="code" id="-oy5nry_34">in</code> (inches): In CSS, 1 inch is roughly 96 pixels.</p></li><li class="list__item" id="-oy5nry_29"><p><code class="code" id="-oy5nry_35">pt</code> (points): in CSS, 1pt is roughly 1.3333 pixels.</p></li><li class="list__item" id="-oy5nry_30"><p><code class="code" id="-oy5nry_36">pc</code> (picas): In CSS, 1pc is roughly 16 pixels.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;h2 class=&quot;px&quot;&gt;px&lt;/h2&gt;
+&lt;h2 class=&quot;cm&quot;&gt;cm&lt;/h2&gt;
+&lt;h2 class=&quot;mm&quot;&gt;mm&lt;/h2&gt;
+&lt;h2 class=&quot;in&quot;&gt;in&lt;/h2&gt;
+&lt;h2 class=&quot;pt&quot;&gt;pt&lt;/h2&gt;
+&lt;h2 class=&quot;pc&quot;&gt;pc&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid;
+}
+
+.px {
+  width: 200px;
+}
+
+.cm {
+  width: 5.3cm;
+}
+
+.mm {
+  width: 52.9mm;
+}
+
+.in {
+  width: 2.1in;
+}
+
+.pt {
+  width: 150.4pt;
+}
+
+.pc {
+  width: 12.5pc;
+}
+</div><figure id="-oy5nry_23"><img alt="absolute units" src="images/absolute-units.png" title="absolute units" width="671" height="658"></figure><p id="-oy5nry_24">In absolute units, all the other units are rarely used except <code class="code" id="-oy5nry_37">px</code>.</p></section><section class="chapter"><h2 id="relative-units" data-toc="relative-units">Relative Units</h2><p id="-oy5nry_38">Relative units depend on the size of other elements (like parent elements, the root element, or the viewport). These units are essential for creating responsive designs.</p><p id="-oy5nry_39">These units include:</p><section class="chapter"><h3 id="percent" data-toc="percent"><code class="code" id="-oy5nry_51">%</code> percent</h3><p id="-oy5nry_47">This size is relative to the parent element.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello world&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;h3&gt;What a better place&lt;/h3&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  border: 2px solid;
+  margin-bottom: 10px;
+}
+
+h2 {
+  border: 2px solid;
+  width: 40%;
+}
+
+h3 {
+  border: 2px solid;
+  width: 110%;
+}
+</div><figure id="-oy5nry_50"><img alt="percentage" src="images/percentage-width.png" title="percentage" width="922" height="439"></figure></section><section class="chapter"><h3 id="em" data-toc="em"><code class="code" id="-oy5nry_58">em</code></h3><p id="-oy5nry_53"><code class="code" id="-oy5nry_59">em</code> means relative to the font-size of the element.</p><p id="-oy5nry_54">2em for example means 2 multiplied by the current font-size.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello world&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  font-size: 20px;
+  border: 2px solid;
+  width: 5em; /*100px (20px*5em)*/
+}
+</div><figure id="-oy5nry_57"><img alt="em" src="images/em.png" title="em" width="967" height="119"></figure></section><section class="chapter"><h3 id="rem" data-toc="rem"><code class="code" id="-oy5nry_63">rem</code></h3><p id="-oy5nry_61">Relative to the font size of the root element (usually <code class="code" id="-oy5nry_64">&lt;html&gt;</code>).</p><div class="code-block" data-lang="css">
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2rem;/* 2 * 10px */
+}
+</div></section><section class="chapter"><h3 id="vw-viewport-width" data-toc="vw-viewport-width"><code class="code" id="-oy5nry_68">vw</code> (viewport width)</h3><p id="-oy5nry_66">1vw = 1% of the viewport width.</p><div class="code-block" data-lang="css">
+div {
+  width: 50vw; /* 50% of the viewport width */
+}
+</div></section><section class="chapter"><h3 id="vh-viewport-height" data-toc="vh-viewport-height"><code class="code" id="-oy5nry_72">vh</code> (viewport height)</h3><p id="-oy5nry_70">1vh = 1% of the height of the viewport.</p><div class="code-block" data-lang="css">
+div {
+  height: 100vh; /* 100% of the viewport height */
+}
+</div></section><section class="chapter"><h3 id="ch" data-toc="ch"><code class="code" id="-oy5nry_77">ch</code></h3><p id="-oy5nry_74">Relative to the width of the character &quot;0&quot; in the element's font.</p><p id="-oy5nry_75">Useful for setting widths in typography.</p><div class="code-block" data-lang="css">
+div {
+  width: 20ch; /* Width of 20 &quot;0&quot; characters */
+}
+</div></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="height-and-width-properties.html" class="navigation-links__prev">Height and Width properties</a><a href="box-model.html" class="navigation-links__next">Box Model</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

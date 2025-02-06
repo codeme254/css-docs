@@ -1,0 +1,91 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6124546"><title>Colors | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"predefined-color-names","level":0,"title":"Predefined color names","anchor":"#predefined-color-names"},{"id":"opacity","level":0,"title":"Opacity","anchor":"#opacity"},{"id":"the-rgb-function","level":0,"title":"The rgb() function","anchor":"#the-rgb-function"},{"id":"hex-hexadecimal","level":0,"title":"Hex (Hexadecimal)","anchor":"#hex-hexadecimal"},{"id":"the-hsl-function","level":0,"title":"The hsl() function","anchor":"#the-hsl-function"},{"id":"the-rgba-function","level":0,"title":"The rgba() function","anchor":"#the-rgba-function"},{"id":"the-hsla-function","level":0,"title":"The hsla() function","anchor":"#the-hsla-function"},{"id":"the-transparent-keyword","level":0,"title":"The transparent keyword","anchor":"#the-transparent-keyword"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Colors | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/colors.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Colors | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/colors.html#webpage",
+    "url": "writerside-documentation/colors.html",
+    "name": "Colors | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Colors" data-main-title="Colors" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Colors" id="Colors.md">Colors</h1><p id="-tcxq99_3">CSS provides various ways to define colors for styling elements.</p><p id="-tcxq99_4">They include:</p><ul class="list _bullet" id="-tcxq99_5"><li class="list__item" id="-tcxq99_14"><p>Predefined color names.</p></li><li class="list__item" id="-tcxq99_15"><p>The <code class="code" id="-tcxq99_20">rgb()</code> function</p></li><li class="list__item" id="-tcxq99_16"><p>hex</p></li><li class="list__item" id="-tcxq99_17"><p>The <code class="code" id="-tcxq99_21">hsl()</code> function</p></li><li class="list__item" id="-tcxq99_18"><p>The <code class="code" id="-tcxq99_22">rgba()</code> function</p></li><li class="list__item" id="-tcxq99_19"><p>The <code class="code" id="-tcxq99_23">hsla()</code> function</p></li></ul><section class="chapter"><h2 id="predefined-color-names" data-toc="predefined-color-names">Predefined color names</h2><p id="-tcxq99_24">CSS comes with a set of predefined color names that can be used directly in your styles.</p><p id="-tcxq99_25">These color names are the same as those we are used to in our day-to-day life, for example, red, green, blue, orange, black, white e.t.c.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is the heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: red;
+}
+</div><figure id="-tcxq99_28"><img alt="predefined color name" src="images/predefined-color-name-output.png" title="predefined color name" width="489" height="87"></figure></section><section class="chapter"><h2 id="opacity" data-toc="opacity">Opacity</h2><p id="-tcxq99_29">Now that we are talking about colors, this is a great time to talk about the opacity property in CSS.</p><p id="-tcxq99_30">The opacity property determines the transparency of an element.</p><p id="-tcxq99_31">It takes any numeric value between 0 and 1 (0 and 1 inclusive) where 1 is fully opaque and 0 is completely transparent.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is the heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: red;
+  opacity: 0.2;
+}
+</div><figure id="-tcxq99_34"><img alt="opacity" src="images/opacity.png" title="opacity" width="494" height="103"></figure></section><section class="chapter"><h2 id="the-rgb-function" data-toc="the-rgb-function">The <code class="code" id="-tcxq99_46">rgb()</code> function</h2><p id="-tcxq99_36">The <code class="code" id="-tcxq99_47">rgb()</code> function in CSS(<code class="code" id="-tcxq99_48">rgb(red, green, blue)</code>) specifies colors by combining the intensities of red, green, and blue.</p><p id="-tcxq99_37">Each of these color channels can have a value between 0 (no intensity) and 255 (full intensity).</p><p id="-tcxq99_38">This allows for the creation of a wide range of colors.</p><p id="-tcxq99_39">Syntax:</p><div class="code-block" data-lang="css">
+element {
+  color: rgb(red, green, blue);
+}
+</div><p id="-tcxq99_41">here are some examples:</p><ul class="list _bullet" id="-tcxq99_42"><li class="list__item" id="-tcxq99_49"><p><code class="code" id="-tcxq99_55">rgb(0, 0, 0)</code>: Black (absence of all colors)</p></li><li class="list__item" id="-tcxq99_50"><p><code class="code" id="-tcxq99_56">rgb(255, 255, 255)</code>: White (full intensity of all colors)</p></li><li class="list__item" id="-tcxq99_51"><p><code class="code" id="-tcxq99_57">rgb(255, 0, 0)</code>: Red (full intensity of red, no green or blue)</p></li><li class="list__item" id="-tcxq99_52"><p><code class="code" id="-tcxq99_58">rgb(0, 255, 0)</code>: Green (full intensity of green, no red or blue)</p></li><li class="list__item" id="-tcxq99_53"><p><code class="code" id="-tcxq99_59">rgb(0, 0, 255)</code>: Blue (full intensity of blue, no red or green)</p></li><li class="list__item" id="-tcxq99_54"><p><code class="code" id="-tcxq99_60">rgb(255, 255, 0)</code>: Yellow (full intensity of red and green, no blue)</p></li></ul><section class="chapter"><h3 id="example-1-rgb" data-toc="example-1-rgb">Example 1 <code class="code" id="-tcxq99_65">rgb()</code>:</h3><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: rgb(0, 255, 0);
+}
+</div><figure id="-tcxq99_64"><img alt="rgb" src="images/rgb.png" title="rgb" width="444" height="108"></figure></section><section class="chapter"><h3 id="example-2-rgb" data-toc="example-2-rgb">Example 2 <code class="code" id="-tcxq99_70">rgb()</code></h3><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: rgb(90, 255, 200);
+}
+</div><figure id="-tcxq99_69"><img alt="rgb" src="images/rgb-2.png" title="rgb" width="437" height="76"></figure></section><section class="chapter"><h3 id="example-3-rgb" data-toc="example-3-rgb">Example 3 <code class="code" id="-tcxq99_75">rgb()</code></h3><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: rgb(90, 25, 220);
+}
+</div><figure id="-tcxq99_74"><img alt="rgb" src="images/rgb-3.png" title="rgb" width="434" height="86"></figure></section></section><section class="chapter"><h2 id="hex-hexadecimal" data-toc="hex-hexadecimal">Hex (Hexadecimal)</h2><p id="-tcxq99_76">Hexadecimal color codes represent colors in six digits, using combinations of <code class="code" id="-tcxq99_89">0&ndash;9</code> and <code class="code" id="-tcxq99_90">A-F</code>.</p><p id="-tcxq99_77">Each pair corresponds to red, green and blue.</p><p id="-tcxq99_78">Syntax:</p><div class="code-block" data-lang="css">
+element {
+  color: #rrggbb;
+}
+</div><p id="-tcxq99_80">For example, #ff0000 would result in a red color because red is set to its highest value (ff) and the others are set to their lowest value (00).</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: #ff0000;
+}
+</div><figure id="-tcxq99_83"><img alt="hex" src="images/hex-1.png" title="hex" width="437" height="90"></figure><p id="-tcxq99_84">#00ff00 would result in a green color because green is set to its highest value (ff) and the others are set to their lowest value (00).</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: #00ff00;
+}
+</div><figure id="-tcxq99_87"><img alt="hex" src="images/hex-2.png" title="hex" width="434" height="81"></figure><p id="-tcxq99_88">You could also go for the shorthand in the form #rgb, for example, red would end up being #f00 and blue would end up being #0f0</p></section><section class="chapter"><h2 id="the-hsl-function" data-toc="the-hsl-function">The <code class="code" id="-tcxq99_97">hsl()</code> function</h2><p id="-tcxq99_92">The <code class="code" id="-tcxq99_98">hsl()</code> function (<code class="code" id="-tcxq99_99">hsl(hue, saturation, lightness)</code>) represents colors using:</p><ul class="list _bullet" id="-tcxq99_93"><li class="list__item" id="-tcxq99_100"><p><span class="control" id="-tcxq99_103">Hue</span>: The type of color (0-360 degrees on the color wheel).</p></li><li class="list__item" id="-tcxq99_101"><p><span class="control" id="-tcxq99_104">Saturation</span>: Intensity of the color (0% to 100%).</p></li><li class="list__item" id="-tcxq99_102"><p><span class="control" id="-tcxq99_105">Lightness</span>: Brightness of the color (0% to 100%)</p></li></ul><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: hsl(0, 100%, 70%);
+}
+</div><figure id="-tcxq99_96"><img alt="hsl" src="images/hsl.png" title="hsl" width="445" height="92"></figure></section><section class="chapter"><h2 id="the-rgba-function" data-toc="the-rgba-function">The <code class="code" id="-tcxq99_112">rgba()</code> function</h2><p id="-tcxq99_107"><code class="code" id="-tcxq99_113">rgba()</code> is an extension of <code class="code" id="-tcxq99_114">rgb()</code> with an added alpha parameter for transparency.</p><p id="-tcxq99_108">The alpha parameter takes a value between 0 and 1 (0 and 1 inclusive), and this will determine how transparent or how opaque and element is with zero meaning completely transparent and one meaning completely opaque.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: rgba(255, 0, 0, .2);
+}
+</div><figure id="-tcxq99_111"><img alt="rgba" src="images/rgba.png" title="rgba" width="435" height="83"></figure></section><section class="chapter"><h2 id="the-hsla-function" data-toc="the-hsla-function">The <code class="code" id="-tcxq99_121">hsla()</code> function</h2><p id="-tcxq99_116"><code class="code" id="-tcxq99_122">hsla()</code> extends <code class="code" id="-tcxq99_123">hsl()</code> with an alpha channel for transparency.</p><p id="-tcxq99_117">The alpha parameter takes a value between 0 and 1 (0 and 1 inclusive), and this will determine how transparent or how opaque and element is with zero meaning completely transparent and one meaning completely opaque.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: hsla(0, 100%, 70%, .3);
+}
+</div><figure id="-tcxq99_120"><img alt="hsla" src="images/hsla.png" title="hsla" width="427" height="73"></figure></section><section class="chapter"><h2 id="the-transparent-keyword" data-toc="the-transparent-keyword">The <code class="code" id="-tcxq99_128">transparent</code> keyword</h2><p id="-tcxq99_125">The <code class="code" id="-tcxq99_129">transparent</code> keyword sets and element color to fully transparent.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  color: transparent;
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="basic-css-selectors.html" class="navigation-links__prev">Basic CSS selectors</a><a href="css-backgrounds.html" class="navigation-links__next">CSS Backgrounds</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

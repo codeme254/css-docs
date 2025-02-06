@@ -1,0 +1,128 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5428339"><title>CSS Backgrounds | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"background-color","level":0,"title":"background-color","anchor":"#background-color"},{"id":"background-image","level":0,"title":"background-image","anchor":"#background-image"},{"id":"background-repeat","level":0,"title":"background-repeat","anchor":"#background-repeat"},{"id":"bakcground-attachment","level":0,"title":"bakcground-attachment","anchor":"#bakcground-attachment"},{"id":"background-position","level":0,"title":"background-position","anchor":"#background-position"},{"id":"background-size","level":0,"title":"background-size","anchor":"#background-size"},{"id":"background-shorthand","level":0,"title":"background shorthand","anchor":"#background-shorthand"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Backgrounds | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-backgrounds.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Backgrounds | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-backgrounds.html#webpage",
+    "url": "writerside-documentation/css-backgrounds.html",
+    "name": "CSS Backgrounds | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Backgrounds" data-main-title="CSS Backgrounds" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Backgrounds" id="CSS-Backgrounds.md">CSS Backgrounds</h1><p id="-w86qk4_3">CSS background properties allow you to control the appearance of an element's background.</p><p id="-w86qk4_4">These properties add/control background effects for an element.</p><p id="-w86qk4_5">These properties are:</p><ul class="list _bullet" id="-w86qk4_6"><li class="list__item" id="-w86qk4_14"><p>background-color</p></li><li class="list__item" id="-w86qk4_15"><p>background-image</p></li><li class="list__item" id="-w86qk4_16"><p>background-repeat</p></li><li class="list__item" id="-w86qk4_17"><p>background-attachment</p></li><li class="list__item" id="-w86qk4_18"><p>background-position</p></li><li class="list__item" id="-w86qk4_19"><p>background (shorthand property)</p></li></ul><section class="chapter"><h2 id="background-color" data-toc="background-color"><code class="code" id="-w86qk4_26">background-color</code></h2><p id="-w86qk4_21">The <code class="code" id="-w86qk4_27">background-color</code> adds a solid color behind an element.</p><p id="-w86qk4_22">It can take color values like named colors, hex, RGB, HSL, and others.</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;This is the title&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+h1 {
+  background-color: crimson;
+}
+</div><figure id="-w86qk4_25"><img alt="background color" src="images/background-color.png" title="background color" width="905" height="116"></figure></section><section class="chapter"><h2 id="background-image" data-toc="background-image"><code class="code" id="-w86qk4_34">background-image</code></h2><p id="-w86qk4_29">The <code class="code" id="-w86qk4_35">background-image</code> property sets an image as the background of an element.</p><p id="-w86qk4_30">It takes <code class="code" id="-w86qk4_36">url()</code> function as a value where you pass the path to the image you want to use as a background.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height: 400px;
+  background-image: url(pets.jpg);
+}
+</div><figure id="-w86qk4_33"><img alt="background image" src="images/background-image.png" title="background image" width="1899" height="668"></figure></section><section class="chapter"><h2 id="background-repeat" data-toc="background-repeat"><code class="code" id="-w86qk4_58">background-repeat</code></h2><p id="-w86qk4_38">When we use an image as a background, by default, the image is repeated so that it covers the entire element as shown below:</p><figure id="-w86qk4_39"><img alt="background image" src="images/background-image.png" title="background image" width="1899" height="668"></figure><p id="-w86qk4_40">The background-repeat property controls if and how the background image repeats.</p><p id="-w86qk4_41">We can use this property to turn off this behavior or control this behavior.</p><p id="-w86qk4_42">By default, the image repeats both horizontally and vertically.</p><p id="-w86qk4_43">The <code class="code" id="-w86qk4_59">background-repeat</code> property takes the following values:</p><ul class="list _bullet" id="-w86qk4_44"><li class="list__item" id="-w86qk4_60"><p><span class="emphasis" id="-w86qk4_64"><span class="control" id="-w86qk4_65">repeat</span></span>: (default value) repeats both horizontally and vertically.</p></li><li class="list__item" id="-w86qk4_61"><p><span class="emphasis" id="-w86qk4_66"><span class="control" id="-w86qk4_67">repeat-x</span></span>: repeats only horizontally.</p></li><li class="list__item" id="-w86qk4_62"><p><span class="emphasis" id="-w86qk4_68"><span class="control" id="-w86qk4_69">repeat-y</span></span>: repeats only vertically.</p></li><li class="list__item" id="-w86qk4_63"><p><span class="emphasis" id="-w86qk4_70"><span class="control" id="-w86qk4_71">no-repeat</span></span>: prevents an image from repeating.</p></li></ul><p id="-w86qk4_45">The image below is repeated both vertically and horizontally</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+}
+</div><figure id="-w86qk4_48"><img alt="default repeat behavior" src="images/default-repeat.png" title="default repeat behavior" width="1905" height="878"></figure><p id="-w86qk4_49">We can make it repeat horizontally by passing <code class="code" id="-w86qk4_72">repeat-x</code> as the value to <code class="code" id="-w86qk4_73">background-repeat</code>.</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: repeat-x;
+}
+</div><figure id="-w86qk4_51"><img alt="repeat-x" src="images/repeat-x.png" title="repeat-x" width="1896" height="512"></figure><p id="-w86qk4_52">We can also make it repeat vertically only by passing <code class="code" id="-w86qk4_74">repeat-y</code> as the value to <code class="code" id="-w86qk4_75">background-repeat</code>.</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: repeat-y;
+}
+</div><figure id="-w86qk4_54"><img alt="repeat-y" src="images/repeat-y.png" title="repeat-y" width="1124" height="847"></figure><p id="-w86qk4_55">If we don't want the background to be repeated, we can pass <code class="code" id="-w86qk4_76">no-repeat</code> as the value to <code class="code" id="-w86qk4_77">background-repeat</code></p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: no-repeat;
+}
+</div><figure id="-w86qk4_57"><img alt="no-repeat" src="images/no-repeat.png" title="no-repeat" width="709" height="483"></figure></section><section class="chapter"><h2 id="bakcground-attachment" data-toc="bakcground-attachment"><code class="code" id="-w86qk4_84">bakcground-attachment</code></h2><p id="-w86qk4_79">The <code class="code" id="-w86qk4_85">background-attachment</code> property determines whether the background scrolls with the page or stays fixed in place.</p><p id="-w86qk4_80">The options are:</p><ul class="list _bullet" id="-w86qk4_81"><li class="list__item" id="-w86qk4_86"><p><span class="emphasis" id="-w86qk4_88"><span class="control" id="-w86qk4_89">scroll</span></span>: (default); background scrolls with the page.</p></li><li class="list__item" id="-w86qk4_87"><p><span class="emphasis" id="-w86qk4_90"><span class="control" id="-w86qk4_91">fixed</span></span>: background stays in place while the page content scrolls.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-attachment: fixed;
+}
+</div></section><section class="chapter"><h2 id="background-position" data-toc="background-position"><code class="code" id="-w86qk4_106">background-position</code></h2><p id="-w86qk4_93">The background-position property specifies the starting position of the background image.</p><p id="-w86qk4_94">You can define it using the following keywords; <code class="code" id="-w86qk4_107">top</code>, <code class="code" id="-w86qk4_108">center</code>, <code class="code" id="-w86qk4_109">bottom</code>, <code class="code" id="-w86qk4_110">left</code> and <code class="code" id="-w86qk4_111">right</code>.</p><p id="-w86qk4_95">Examples:</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><p id="-w86qk4_97">we can position the background image at the center:</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</div><figure id="-w86qk4_99"><img alt="position center" src="images/pos-center.png" title="position center" width="1899" height="753"></figure><p id="-w86qk4_100">we can position the background image to the right:</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+</div><figure id="-w86qk4_102"><img alt="position right" src="images/pos-right.png" title="position right" width="1899" height="706"></figure><p id="-w86qk4_103">We can also combine these keywords, for example, we can position the image to the top right.</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets-small.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</div><figure id="-w86qk4_105"><img alt="position top right" src="images/pos-top-right.png" title="position top right" width="1894" height="488"></figure></section><section class="chapter"><h2 id="background-size" data-toc="background-size"><code class="code" id="-w86qk4_122">background-size</code></h2><p id="-w86qk4_113">The <code class="code" id="-w86qk4_123">background-size</code> property defines the size of the background image.</p><p id="-w86qk4_114">The options are:</p><ul class="list _bullet" id="-w86qk4_115"><li class="list__item" id="-w86qk4_124"><p><span class="emphasis" id="-w86qk4_128"><span class="control" id="-w86qk4_129">auto</span></span> (default): keeps the original size of the image.</p></li><li class="list__item" id="-w86qk4_125"><p><span class="emphasis" id="-w86qk4_130"><span class="control" id="-w86qk4_131">cover</span></span>: scales the image to cover the entire element.</p></li><li class="list__item" id="-w86qk4_126"><p><span class="emphasis" id="-w86qk4_132"><span class="control" id="-w86qk4_133">contain</span></span>: fits the image within the element maintaining its aspect ratio.</p></li><li class="list__item" id="-w86qk4_127"><p>You can also use custom dimensions, e.g., 100&nbsp;px.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</div><figure id="-w86qk4_118"><img alt="background-size: cover;" src="images/back-size-cover.png" title="background-size: cover;" width="1895" height="845"></figure><p id="-w86qk4_119">Background size set to <code class="code" id="-w86qk4_134">contain</code>;</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-image: url(pets.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+</div><figure id="-w86qk4_121"><img alt="background-size: contain;" src="images/back-size-contain.png" title="background-size: contain;" width="1887" height="858"></figure></section><section class="chapter"><h2 id="background-shorthand" data-toc="background-shorthand"><code class="code" id="-w86qk4_144">background</code> shorthand</h2><p id="-w86qk4_136">The <code class="code" id="-w86qk4_145">background</code> shorthand property combines all the individual background properties into one declaration.</p><p id="-w86qk4_137">Here is the syntax:</p><div class="code-block" data-lang="css">
+background: [COLOR] [IMAGE] [REPEAT] [ATTACHMENT] [POSITION] / [SIZE];
+</div><p id="-w86qk4_139">Consider the CSS code below:</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background-color: crimson;
+  background-image: url(pets-small.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left;
+  background-size: contain;
+}
+</div><p id="-w86qk4_141">It ends up producing this output: <figure id="-w86qk4_146"><img alt="background" src="images/bg-all.png" title="background" width="1895" height="849"></figure></p><p id="-w86qk4_142">We can use the <code class="code" id="-w86qk4_147">background</code> shorthand to summarize the code above to a single line as shown:</p><div class="code-block" data-lang="css">
+div {
+  height:550px;
+  background: crimson url(pets-small.jpg) no-repeat scroll left / contain;
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="colors.html" class="navigation-links__prev">Colors</a><a href="css-gradients.html" class="navigation-links__next">CSS Gradients</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

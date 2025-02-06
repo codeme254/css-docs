@@ -1,0 +1,127 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6307932"><title>CSS Animations | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"keyframes","level":0,"title":"@keyframes","anchor":"#keyframes"},{"id":"animation-name","level":0,"title":"animation-name","anchor":"#animation-name"},{"id":"animation-duration","level":0,"title":"animation-duration","anchor":"#animation-duration"},{"id":"animation-iteration-count","level":0,"title":"animation-iteration-count","anchor":"#animation-iteration-count"},{"id":"animation-direction","level":0,"title":"animation-direction","anchor":"#animation-direction"},{"id":"animation-timing-function","level":0,"title":"animation-timing-function","anchor":"#animation-timing-function"},{"id":"animation-delay","level":0,"title":"animation-delay","anchor":"#animation-delay"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Animations | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-animations.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Animations | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-animations.html#webpage",
+    "url": "writerside-documentation/css-animations.html",
+    "name": "CSS Animations | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Animations" data-main-title="CSS Animations" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Animations" id="CSS-Animations.md">CSS Animations</h1><p id="-rrp5o6_3">CSS animations enable elements to transition between different states or keyframes.</p><p id="-rrp5o6_4">They provide more control than transitions, allowing multiple steps in the animation process.</p><p id="-rrp5o6_5">Animations are defined using the <code class="code" id="-rrp5o6_13">@keyframes</code> rule and applied to elements with the <code class="code" id="-rrp5o6_14">animation</code> property.</p><section class="chapter"><h2 id="keyframes" data-toc="keyframes"><code class="code" id="-rrp5o6_21">@keyframes</code></h2><p id="-rrp5o6_16">Defines the animation's keyframes (states or steps).</p><p id="-rrp5o6_17">Syntax:</p><div class="code-block" data-lang="css">
+@keyframes animation-name {
+  0% { property: value; }
+  30% { property: value; }
+  50% { property: value; }
+  ...
+  100% { property: value; }
+}
+
+</div><p id="-rrp5o6_19">For example:</p><div class="code-block" data-lang="css">
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-name" data-toc="animation-name"><code class="code" id="-rrp5o6_25">animation-name</code></h2><p id="-rrp5o6_23">Specifies the name of the animation (matches the name in @keyframes).</p><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-duration" data-toc="animation-duration"><code class="code" id="-rrp5o6_29">animation-duration</code></h2><p id="-rrp5o6_27">Defines how long the animation takes to complete.</p><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+  animation-duration: 2s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-iteration-count" data-toc="animation-iteration-count"><code class="code" id="-rrp5o6_34">animation-iteration-count</code></h2><p id="-rrp5o6_31">Specifies how many times the animation repeats.</p><p id="-rrp5o6_32">The default value is 1, meaning the animation runs once, you can supply a custom value or use the <code class="code" id="-rrp5o6_35">infinite</code> keyword which makes the animation run indefinitely.</p><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-direction" data-toc="animation-direction"><code class="code" id="-rrp5o6_41">animation-direction</code></h2><p id="-rrp5o6_37">Specifies the direction of the animation playback.</p><p id="-rrp5o6_38">The values are:</p><ul class="list _bullet" id="-rrp5o6_39"><li class="list__item" id="-rrp5o6_42"><p><span class="control" id="-rrp5o6_46">normal</span>: Default, plays forward.</p></li><li class="list__item" id="-rrp5o6_43"><p><span class="control" id="-rrp5o6_47">reverse</span>: Plays backward.</p></li><li class="list__item" id="-rrp5o6_44"><p><span class="control" id="-rrp5o6_48">alternate</span>: Alternates between forward and backward.</p></li><li class="list__item" id="-rrp5o6_45"><p><span class="control" id="-rrp5o6_49">alternate-reverse</span>: Alternates between backward and forward.</p></li></ul><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-timing-function" data-toc="animation-timing-function"><code class="code" id="-rrp5o6_55">animation-timing-function</code></h2><p id="-rrp5o6_51">Controls the pacing of the animation.</p><p id="-rrp5o6_52">The common values are:</p><ul class="list _bullet" id="-rrp5o6_53"><li class="list__item" id="-rrp5o6_56"><p><span class="control" id="-rrp5o6_62">ease</span> (default): Starts slow, accelerates, then slows down.</p></li><li class="list__item" id="-rrp5o6_57"><p><span class="control" id="-rrp5o6_63">linear</span>: Constant speed.</p></li><li class="list__item" id="-rrp5o6_58"><p><span class="control" id="-rrp5o6_64">ease-in</span>: Starts slow.</p></li><li class="list__item" id="-rrp5o6_59"><p><span class="control" id="-rrp5o6_65">ease-out</span>: Ends slow.</p></li><li class="list__item" id="-rrp5o6_60"><p><span class="control" id="-rrp5o6_66">ease-in-out</span>: Slow at both ends.</p></li><li class="list__item" id="-rrp5o6_61"><p><span class="control" id="-rrp5o6_67">cubic-bezier(n, n, n, n)</span>: Custom timing function.</p></li></ul><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><section class="chapter"><h2 id="animation-delay" data-toc="animation-delay"><code class="code" id="-rrp5o6_71">animation-delay</code></h2><p id="-rrp5o6_69">Specifies a delay before the animation starts.</p><div class="code-block" data-lang="css">
+div {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-transitions.html" class="navigation-links__prev">CSS Transitions</a><a href="css-custom-properties-variables.html" class="navigation-links__next">CSS Custom properties (variables)</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

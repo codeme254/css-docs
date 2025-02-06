@@ -1,0 +1,111 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6194899"><title>Position | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"static-default","level":0,"title":"static (default)","anchor":"#static-default"},{"id":"relative","level":0,"title":"relative","anchor":"#relative"},{"id":"fixed","level":0,"title":"fixed","anchor":"#fixed"},{"id":"absolute","level":0,"title":"absolute","anchor":"#absolute"},{"id":"sticky","level":0,"title":"sticky","anchor":"#sticky"},{"id":"the-z-index-property","level":0,"title":"The z-index property","anchor":"#the-z-index-property"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Position | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/position.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Position | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/position.html#webpage",
+    "url": "writerside-documentation/position.html",
+    "name": "Position | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Position" data-main-title="Position" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Position" id="Position.md">Position</h1><p id="ncyare_3">The position property in CSS determines how an element is positioned in the document flow and how it interacts with other elements.</p><p id="ncyare_4">The values for position property are:</p><ul class="list _bullet" id="ncyare_5"><li class="list__item" id="ncyare_13"><p><span class="control" id="ncyare_18">static</span></p></li><li class="list__item" id="ncyare_14"><p><span class="control" id="ncyare_19">relative</span></p></li><li class="list__item" id="ncyare_15"><p><span class="control" id="ncyare_20">fixed</span></p></li><li class="list__item" id="ncyare_16"><p><span class="control" id="ncyare_21">absolute</span></p></li><li class="list__item" id="ncyare_17"><p><span class="control" id="ncyare_22">sticky</span></p></li></ul><p id="ncyare_6">These properties work hand in hand with the <span class="control" id="ncyare_23">top</span>, <span class="control" id="ncyare_24">bottom</span>, <span class="control" id="ncyare_25">right</span>, and <span class="control" id="ncyare_26">left</span> properties to adjust the position of the element.</p><section class="chapter"><h2 id="static-default" data-toc="static-default"><span class="control" id="ncyare_30">static</span> (default)</h2><p id="ncyare_28">The element is positioned according to the normal document flow (its default position in the layout).</p><p id="ncyare_29">Does not respond to top, right, bottom or left.</p></section><section class="chapter"><h2 id="relative" data-toc="relative"><span class="control" id="ncyare_37">relative</span></h2><p id="ncyare_32">The element is positioned relative to its normal position in the document flow.</p><p id="ncyare_33">The element remains in the flow but you can adjust its position using top, right, bottom, left.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+</div><figure id="ncyare_36"><img alt="position: relative;" src="images/position-relative.png" title="position: relative;" width="938" height="770"></figure></section><section class="chapter"><h2 id="fixed" data-toc="fixed"><span class="control" id="ncyare_44">fixed</span></h2><p id="ncyare_39">The element is positioned relative to the viewport (the browser window).</p><p id="ncyare_40">It stays in the same position even when the page is scrolled.</p><p id="ncyare_41">The element is removed from the normal document flow.</p><p id="ncyare_42">Can be used in sticky headers, footers, or elements like back-to-top button.</p><div class="code-block" data-lang="css">
+div {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+</div></section><section class="chapter"><h2 id="absolute" data-toc="absolute"><span class="control" id="ncyare_53">absolute</span></h2><p id="ncyare_46">The element is positioned relative to its nearest positioned ancestor (an ancestor with relative, absolute, or fixed position).</p><p id="ncyare_47">If no positioned ancestor exists, it positions itself relative to the initial containing block (the html element).</p><p id="ncyare_48">The element is removed from the normal document flow.</p><p id="ncyare_49">Used in precise placement of elements, overlays or tooltips.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;parent&quot;&gt;
+    &lt;div class=&quot;child&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.parent {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+</div><figure id="ncyare_52"><img alt="position: absolute;" src="images/position-absolute.png" title="position: absolute;" width="571" height="558"></figure></section><section class="chapter"><h2 id="sticky" data-toc="sticky"><span class="control" id="ncyare_58">sticky</span></h2><p id="ncyare_55">Behavior: The element toggles between relative and fixed depending on the scroll position.</p><p id="ncyare_56">The element acts as relative until it reaches a defined offset (top, bottom, left, right), then it becomes fixed.</p><div class="code-block" data-lang="css">
+.parent {
+  width: 100%;
+  height: 20px;
+  background-color: green;
+  margin-top: 100px;
+
+  position: sticky;
+  top: 0px;
+  left: 0;
+}
+</div></section><section class="chapter"><h2 id="the-z-index-property" data-toc="the-z-index-property">The <code class="code" id="ncyare_72">z-index</code> property</h2><p id="ncyare_60">Sometimes when working with the position property, elements end up stacking on top each other, in such cases, we might want a certain element to appear in front of the other, this is where the z-index property comes in.</p><p id="ncyare_61">The z-index property in CSS controls the stacking order of elements on the z-axis (visual depth).</p><p id="ncyare_62">It determines which elements appear in front of or behind others.</p><p id="ncyare_63">z-index works only on elements with a positioning context (position set to relative, absolute, fixed, or sticky). It does not apply to static elements.</p><p id="ncyare_64">The default value is auto, which means the element follows the natural stacking order.</p><p id="ncyare_65">Elements with a higher z-index value appear in front of those with a lower value.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;element1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;element2&quot;&gt;&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.element1 {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.element2 {
+  width: 130px;
+  height: 130px;
+  background-color: red;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+</div><figure id="ncyare_68"><img alt="example" src="images/z-index-1.png" title="example" width="287" height="284"></figure><p id="ncyare_69">In the example above, the red and green boxes are stacked on top of each other, we can make the green element appear on top of the red element by giving the green element a higher z-index than the red element.</p><div class="code-block" data-lang="css">
+.element1 {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.element2 {
+  width: 130px;
+  height: 130px;
+  background-color: red;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+}
+</div><figure id="ncyare_71"><img alt="example" src="images/z-index-2.png" title="example" width="302" height="299"></figure></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="the-display-property.html" class="navigation-links__prev">The Display Property</a><a href="css-overflow.html" class="navigation-links__next">CSS Overflow</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

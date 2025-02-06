@@ -1,0 +1,42 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6154875"><title>CSS Transitions | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"transition-delay","level":0,"title":"transition-delay","anchor":"#transition-delay"},{"id":"transition-duration","level":0,"title":"transition-duration","anchor":"#transition-duration"},{"id":"transition-property","level":0,"title":"transition-property","anchor":"#transition-property"},{"id":"transition-timing-function","level":0,"title":"transition-timing-function","anchor":"#transition-timing-function"},{"id":"the-transition-shorthand","level":0,"title":"The transition shorthand","anchor":"#the-transition-shorthand"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Transitions | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-transitions.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Transitions | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-transitions.html#webpage",
+    "url": "writerside-documentation/css-transitions.html",
+    "name": "CSS Transitions | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Transitions" data-main-title="CSS Transitions" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Transitions" id="CSS-Transitions.md">CSS Transitions</h1><p id="-hxwbil_3">CSS transitions make property changes smooth and visually appealing by animating the transition between states.</p><section class="chapter"><h2 id="transition-delay" data-toc="transition-delay"><code class="code" id="-hxwbil_13">transition-delay</code></h2><p id="-hxwbil_10">Defines the time to wait before the transition starts.</p><p id="-hxwbil_11">The value is supplied in seconds units i.e. <code class="code" id="-hxwbil_14">s</code></p><div class="code-block" data-lang="css">
+div {
+  transition-delay: 0.5s;
+}
+</div></section><section class="chapter"><h2 id="transition-duration" data-toc="transition-duration"><code class="code" id="-hxwbil_18">transition-duration</code></h2><p id="-hxwbil_16">Specifies how long the transition takes to complete.</p><div class="code-block" data-lang="css">
+div {
+  transition-duration: 1s;
+}
+</div></section><section class="chapter"><h2 id="transition-property" data-toc="transition-property"><code class="code" id="-hxwbil_23">transition-property</code></h2><p id="-hxwbil_20">Specifies the CSS property to animate.</p><p id="-hxwbil_21">Use the <code class="code" id="-hxwbil_24">all</code> keyword to animate all animatable properties.</p><div class="code-block" data-lang="css">
+div {
+  transition-property: background-color;
+}
+</div></section><section class="chapter"><h2 id="transition-timing-function" data-toc="transition-timing-function"><code class="code" id="-hxwbil_32">transition-timing-function</code></h2><p id="-hxwbil_26">Defines the speed curve of the transition.</p><p id="-hxwbil_27">The common values are:</p><ul class="list _bullet" id="-hxwbil_28"><li class="list__item" id="-hxwbil_33"><p><span class="control" id="-hxwbil_38">ease</span> (default): Starts slow, accelerates, then slows down.</p></li><li class="list__item" id="-hxwbil_34"><p><span class="control" id="-hxwbil_39">linear</span>: Maintains a constant speed.</p></li><li class="list__item" id="-hxwbil_35"><p><span class="control" id="-hxwbil_40">ease-in</span>: Starts slow, then accelerates.</p></li><li class="list__item" id="-hxwbil_36"><p><span class="control" id="-hxwbil_41">ease-out</span>: Starts fast, then slows down.</p></li><li class="list__item" id="-hxwbil_37"><p><span class="control" id="-hxwbil_42">ease-in-out</span>: Starts slow, accelerates in the middle, then slows down.</p></li></ul><div class="code-block" data-lang="css">
+div {
+  transition-timing-function: ease-in-out;
+}
+</div><p id="-hxwbil_30">You can supply a custom timing function using <code class="code" id="-hxwbil_43">cubic-bezier()</code> i.e. <code class="code" id="-hxwbil_44">cubic-bezier(n, n, n, n)</code></p><div class="code-block" data-lang="css">
+div {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1));
+}
+</div></section><section class="chapter"><h2 id="the-transition-shorthand" data-toc="the-transition-shorthand">The <code class="code" id="-hxwbil_49">transition</code> shorthand</h2><p id="-hxwbil_46">Combines transition-property, transition-duration, transition-timing-function, and transition-delay into a single line.</p><div class="code-block" data-lang="css">
+transition: property duration timing-function delay;
+</div><div class="code-block" data-lang="css">
+div {
+  transition: background-color 0.5s ease-in 0.2s;
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="2d-transformations.html" class="navigation-links__prev">2D Transformations</a><a href="css-animations.html" class="navigation-links__next">CSS Animations</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

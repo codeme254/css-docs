@@ -1,0 +1,59 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5680144"><title>Shadow Effects | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"box-shadow","level":0,"title":"box-shadow","anchor":"#box-shadow"},{"id":"text-shadow","level":0,"title":"text-shadow","anchor":"#text-shadow"},{"id":"drop-shadow","level":0,"title":"drop-shadow","anchor":"#drop-shadow"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Shadow Effects | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/shadow-effects.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Shadow Effects | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/shadow-effects.html#webpage",
+    "url": "writerside-documentation/shadow-effects.html",
+    "name": "Shadow Effects | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Shadow-Effects" data-main-title="Shadow Effects" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Shadow-Effects" id="Shadow-Effects.md">Shadow Effects</h1><p id="-2gibki_3">CSS shadow effects add depth and dimension to your web design by creating shadows on elements.</p><p id="-2gibki_4">These include:</p><ul class="list _bullet" id="-2gibki_5"><li class="list__item" id="-2gibki_9"><p>box-shadow</p></li><li class="list__item" id="-2gibki_10"><p>text-shadow</p></li><li class="list__item" id="-2gibki_11"><p>drop-shadow</p></li></ul><section class="chapter"><h2 id="box-shadow" data-toc="box-shadow"><code class="code" id="-2gibki_20">box-shadow</code></h2><p id="-2gibki_13">The box-shadow property applies shadows to the outer frame of a box-like element (e.g., div, button).</p><div class="code-block" data-lang="css">
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+</div><ul class="list _bullet" id="-2gibki_15"><li class="list__item" id="-2gibki_21"><p><span class="control" id="-2gibki_26">offset-x</span>: Horizontal shadow distance (positive for right, negative for left).</p></li><li class="list__item" id="-2gibki_22"><p><span class="control" id="-2gibki_27">offset-y</span>: Vertical shadow distance (positive for bottom, negative for top).</p></li><li class="list__item" id="-2gibki_23"><p><span class="control" id="-2gibki_28">blur-radius</span>: Blurring effect (higher values create softer shadows).</p></li><li class="list__item" id="-2gibki_24"><p><span class="control" id="-2gibki_29">spread-radius</span>: Shadow size (positive to expand, negative to shrink).</p></li><li class="list__item" id="-2gibki_25"><p><span class="control" id="-2gibki_30">color</span>: Shadow color.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello, world&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+
+  /* box shadow */
+  box-shadow: 5px 5px 20px 2px red;
+}
+</div><figure id="-2gibki_18"><img alt="box shadow" src="images/box-shadow.png" title="box shadow" width="677" height="631"></figure><section class="chapter"><h3 id="multiple-box-shadows" data-toc="multiple-box-shadows">Multiple box shadows</h3><p id="-2gibki_31">You can add multiple shadows to an element by separating them with commas:</p><div class="code-block" data-lang="css">
+box-shadow: shadow1, shadow2, shadow3;
+</div><div class="code-block" data-lang="css">
+div {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+
+  /* box shadow */
+  box-shadow:
+    5px 5px 20px 2px red,
+    5px 5px 25px 9px green,
+    5px 5px 25px 9px orange;
+}
+</div><figure id="-2gibki_34"><img alt="multiple box shadows" src="images/multiple-box-shadows.png" title="multiple box shadows" width="700" height="659"></figure></section></section><section class="chapter"><h2 id="text-shadow" data-toc="text-shadow"><code class="code" id="-2gibki_41">text-shadow</code></h2><p id="-2gibki_36">The text-shadow property adds shadows to text, enhancing typography.</p><div class="code-block" data-lang="css">
+text-shadow: offset-x offset-y blur-radius color;
+</div><p id="-2gibki_38">The syntax is similar to box-shadow syntax but without the spread-radius</p><div class="code-block" data-lang="css">
+h2 {
+  text-shadow: 2px 2px 3px red;
+}
+</div><figure id="-2gibki_40"><img alt="text shadow" src="images/text-shadow.png" title="text shadow" width="270" height="78"></figure></section><section class="chapter"><h2 id="drop-shadow" data-toc="drop-shadow"><code class="code" id="-2gibki_49">drop-shadow</code></h2><p id="-2gibki_43">The <code class="code" id="-2gibki_50">drop-shadow</code> function in the filter property applies a shadow to images or SVGs, similar to box-shadow but with better clipping behavior.</p><p id="-2gibki_44">Unlike box-shadow, drop-shadow considers the shape of the image or SVG instead of just its bounding box.</p><div class="code-block" data-lang="css">
+filter: drop-shadow(offset-x offset-y blur-radius color);
+</div><div class="code-block" data-lang="markup">
+&lt;img src=&quot;img.png&quot; alt=&quot;img&quot; width=&quot;100px&quot;&gt;
+</div><div class="code-block" data-lang="css">
+img {
+  filter: drop-shadow(10px 10px 10px red);
+}
+</div><figure id="-2gibki_48"><img alt="drop shadow" src="images/drop-shadow.png" title="drop shadow" width="274" height="297"></figure></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-math-functions.html" class="navigation-links__prev">CSS Math functions</a><a href="2d-transformations.html" class="navigation-links__next">2D Transformations</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

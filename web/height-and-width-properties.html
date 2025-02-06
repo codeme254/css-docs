@@ -1,0 +1,70 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6403335"><title>Height and Width properties | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"height","level":0,"title":"height","anchor":"#height"},{"id":"width","level":0,"title":"width","anchor":"#width"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Height and Width properties | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/height-and-width-properties.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Height and Width properties | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/height-and-width-properties.html#webpage",
+    "url": "writerside-documentation/height-and-width-properties.html",
+    "name": "Height and Width properties | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Height-and-Width-properties" data-main-title="Height and Width properties" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Height-and-Width-properties" id="Height-and-Width-properties.md">Height and Width properties</h1><section class="chapter"><h2 id="height" data-toc="height"><code class="code" id="-pqcgf_13">height</code></h2><p id="-pqcgf_6">The <code class="code" id="-pqcgf_14">height</code> property sets the height of an element to a specific value.</p><p id="-pqcgf_7">It can use any units like <code class="code" id="-pqcgf_15">px</code>, <code class="code" id="-pqcgf_16">em</code>, <code class="code" id="-pqcgf_17">rem</code>, <code class="code" id="-pqcgf_18">%</code>, <code class="code" id="-pqcgf_19">vh</code>, <code class="code" id="-pqcgf_20">vw</code>, e.t.c.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello, world&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  border: 1px solid red;
+  height: 300px;
+}
+</div><figure id="-pqcgf_10"><img alt="height" src="images/height.png" title="height" width="971" height="678"></figure><section class="chapter"><h3 id="max-height" data-toc="max-height"><code class="code" id="-pqcgf_27">max-height</code></h3><p id="-pqcgf_22">The <code class="code" id="-pqcgf_28">max-height</code> properties specifies the maximum height an element can grow to.</p><p id="-pqcgf_23">If the content height exceeds this value, it will be clipped.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex
+        quidem deserunt sed ipsum perspiciatis eum quibusdam dignissimos modi
+        beatae.
+    &lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  border: 3px solid red;
+  height: 90px;
+}
+</div><figure id="-pqcgf_26"><img alt="max-height" src="images/max-height.png" title="max-height" width="967" height="300"></figure></section><section class="chapter"><h3 id="min-height" data-toc="min-height"><code class="code" id="-pqcgf_35">min-height</code></h3><p id="-pqcgf_30">The <code class="code" id="-pqcgf_36">min-height</code> property specifies the minimum height an element can shrink to.</p><p id="-pqcgf_31">Even if the content is smaller, the element cannot go below this height.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex
+        quidem deserunt sed ipsum perspiciatis eum quibusdam dignissimos modi
+        beatae.
+    &lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  border: 3px solid red;
+  min-height: 250px;
+}
+</div><figure id="-pqcgf_34"><img alt="min-height" src="images/min-height.png" title="min-height" width="968" height="567"></figure></section></section><section class="chapter"><h2 id="width" data-toc="width"><code class="code" id="-pqcgf_45">width</code></h2><p id="-pqcgf_38">The <code class="code" id="-pqcgf_46">width</code> property sets the width of an element to a specified value.</p><p id="-pqcgf_39">It can use any units like <code class="code" id="-pqcgf_47">px</code>, <code class="code" id="-pqcgf_48">em</code>, <code class="code" id="-pqcgf_49">rem</code>, <code class="code" id="-pqcgf_50">%</code>, <code class="code" id="-pqcgf_51">vh</code>, <code class="code" id="-pqcgf_52">vw</code>, e.t.c.</p><div class="code-block" data-lang="markup">
+&lt;h2&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ut.&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid;
+  width: 250px;
+}
+</div><figure id="-pqcgf_42"><img alt="width" src="images/width.png" title="width" width="983" height="275"></figure><section class="chapter"><h3 id="max-width" data-toc="max-width"><code class="code" id="-pqcgf_58">max-width</code></h3><p id="-pqcgf_54">The <code class="code" id="-pqcgf_59">max-width</code> property specifies the maximum width an element can grow to.</p><p id="-pqcgf_55">If the content width exceeds this value, it will wrap or be clipped.</p><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid;
+  max-width: 50px;
+}
+</div><figure id="-pqcgf_57"><img alt="max-width" src="images/max-width.png" title="max-width" width="979" height="632"></figure></section><section class="chapter"><h3 id="min-width" data-toc="min-width"><code class="code" id="-pqcgf_66">min-width</code></h3><p id="-pqcgf_61">The <code class="code" id="-pqcgf_67">min-width</code> property specifies the minimum width an element can shrink to.</p><p id="-pqcgf_62">Even if the content is smaller, the element will not go below this width.</p><div class="code-block" data-lang="markup">
+&lt;h2&gt;Hello, world&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid;
+  min-width: 150px;
+}
+</div><figure id="-pqcgf_65"><img alt="min-width" src="images/min-width.png" title="min-width" width="971" height="98"></figure></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-padding.html" class="navigation-links__prev">CSS Padding</a><a href="css-units.html" class="navigation-links__next">CSS Units</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

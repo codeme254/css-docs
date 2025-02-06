@@ -1,0 +1,62 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6184845"><title>CSS Padding | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"applying-padding","level":0,"title":"Applying padding","anchor":"#applying-padding"},{"id":"padding-shorthand","level":0,"title":"Padding shorthand","anchor":"#padding-shorthand"},{"id":"the-padding-block-property","level":0,"title":"The padding-block property","anchor":"#the-padding-block-property"},{"id":"the-padding-inline-property","level":0,"title":"The padding-inline property","anchor":"#the-padding-inline-property"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Padding | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-padding.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Padding | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-padding.html#webpage",
+    "url": "writerside-documentation/css-padding.html",
+    "name": "CSS Padding | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Padding" data-main-title="CSS Padding" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Padding" id="CSS-Padding.md">CSS Padding</h1><p id="-g9k96o_3">Padding is the space between the content of an element and its border.</p><p id="-g9k96o_4">It creates an inner space around the content, ensuring the content does not touch the edges of the element.</p><section class="chapter"><h2 id="applying-padding" data-toc="applying-padding">Applying padding</h2><p id="-g9k96o_9">You can apply padding to the individual sides of an element using the following properties:</p><ul class="list _bullet" id="-g9k96o_10"><li class="list__item" id="-g9k96o_14"><p><span class="control" id="-g9k96o_18">padding-top</span>: Specifies the padding space on the top side of the element.</p></li><li class="list__item" id="-g9k96o_15"><p><span class="control" id="-g9k96o_19">padding-bottom</span>: Specifies the padding space on the bottom side of the element.</p></li><li class="list__item" id="-g9k96o_16"><p><span class="control" id="-g9k96o_20">padding-right</span>: Specifies the padding space on the right side of the element.</p></li><li class="list__item" id="-g9k96o_17"><p><span class="control" id="-g9k96o_21">padding-left</span>: Specifies the padding space on the left side of the element.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;h2&gt;Hello, world&lt;/h2&gt;
+</div><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+</div><figure id="-g9k96o_13"><img alt="padding" src="images/padding-4-sides.png" title="padding" width="990" height="230"></figure></section><section class="chapter"><h2 id="padding-shorthand" data-toc="padding-shorthand">Padding shorthand</h2><p id="-g9k96o_22">The padding shorthand property in CSS allows you to set the padding for all four sides of an element in a single declaration.</p><p id="-g9k96o_23">The syntax can vary depending on how many values you specify:</p><ul class="list _bullet" id="-g9k96o_24"><li class="list__item" id="-g9k96o_36"><p><span class="control" id="-g9k96o_37">One value</span>: applies the same padding to all sides.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding: 30px;
+}
+</div><figure id="-g9k96o_26"><img alt="1 value padding" src="images/padding-1-value.png" title="1 value padding" width="987" height="202"></figure><ul class="list _bullet" id="-g9k96o_27"><li class="list__item" id="-g9k96o_38"><p><span class="control" id="-g9k96o_39">Two values</span> The first applies to the top and bottom, and the second applies to the left and right.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding: 30px 100px;
+}
+</div><figure id="-g9k96o_29"><img alt="2 values padding" src="images/padding-2-values.png" title="2 values padding" width="975" height="190"></figure><ul class="list _bullet" id="-g9k96o_30"><li class="list__item" id="-g9k96o_40"><p><span class="control" id="-g9k96o_41">Three values</span>: The first one applies to the top, the second to the right and left, and the third to the bottom.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding: 15px 40px 100px;
+}
+</div><figure id="-g9k96o_32"><img alt="3 values padding" src="images/padding-3-values.png" title="3 values padding" width="974" height="284"></figure><ul class="list _bullet" id="-g9k96o_33"><li class="list__item" id="-g9k96o_42"><p><span class="control" id="-g9k96o_43">Four values</span>: Each value applies to a specific side, starting from the top and moving clockwise.</p></li></ul><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding: 10px 20px 30px 40px;
+}
+</div><figure id="-g9k96o_35"><img alt="4 values padding" src="images/padding-4-values.png" title="4 values padding" width="983" height="151"></figure></section><section class="chapter"><h2 id="the-padding-block-property" data-toc="the-padding-block-property">The <code class="code" id="-g9k96o_51">padding-block</code> property</h2><p id="-g9k96o_45">The <code class="code" id="-g9k96o_52">padding-block</code> property applies padding to the top and bottom of an element.</p><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding-block: 50px;
+}
+</div><figure id="-g9k96o_47"><img alt="padding-block" src="images/padding-block.png" title="padding-block" width="978" height="252"></figure><p id="-g9k96o_48">To apply padding to the top only, you can use <code class="code" id="-g9k96o_53">padding-block-start</code> and to apply padding to the bottom only, you can use <code class="code" id="-g9k96o_54">padding-block-end</code>.</p><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding-block-start: 20px;
+  padding-block-end: 50px;
+}
+</div><figure id="-g9k96o_50"><img alt="padding-block-start and padding-block-end" src="images/padding-block-start-end.png" title="padding-block-start and padding-block-end" width="980" height="209"></figure></section><section class="chapter"><h2 id="the-padding-inline-property" data-toc="the-padding-inline-property">The <code class="code" id="-g9k96o_60">padding-inline</code> property</h2><p id="-g9k96o_56">The <code class="code" id="-g9k96o_61">padding-inline</code> property applies padding to the left and right of an element.</p><div class="code-block" data-lang="css">
+h2 {
+  border: 2px solid crimson;
+  padding-inline: 50px;
+}
+</div><figure id="-g9k96o_58"><img alt="padding-inline" src="images/padding-inline.png" title="padding-inline" width="983" height="76"></figure><p id="-g9k96o_59">You can use <code class="code" id="-g9k96o_62">padding-inline-start</code> to apply padding to the left and <code class="code" id="-g9k96o_63">padding-inline-end</code> to apply padding to the right.</p></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-margins.html" class="navigation-links__prev">CSS Margins</a><a href="height-and-width-properties.html" class="navigation-links__next">Height and Width properties</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

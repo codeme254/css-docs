@@ -1,0 +1,81 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5913059"><title>2D Transformations | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"translate","level":0,"title":"translate()","anchor":"#translate"},{"id":"rotate","level":0,"title":"rotate()","anchor":"#rotate"},{"id":"scalex","level":0,"title":"scaleX()","anchor":"#scalex"},{"id":"scaley","level":0,"title":"scaleY()","anchor":"#scaley"},{"id":"skewx","level":0,"title":"skewX()","anchor":"#skewx"},{"id":"skewy","level":0,"title":"skewY()","anchor":"#skewy"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="2D Transformations | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/2d-transformations.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="2D Transformations | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/2d-transformations.html#webpage",
+    "url": "writerside-documentation/2d-transformations.html",
+    "name": "2D Transformations | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="2D-Transformations" data-main-title="2D Transformations" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="2D-Transformations" id="2D-Transformations.md">2D Transformations</h1><p id="z6cvf8_3">CSS 2D transformations modify elements by translating, rotating, scaling, skewing, or combining these transformations.</p><p id="z6cvf8_4">They are applied using the transform property, allowing rich visual effects.</p><p id="z6cvf8_5">These transformations include:</p><ul class="list _bullet" id="z6cvf8_6"><li class="list__item" id="z6cvf8_13"><p>translate()</p></li><li class="list__item" id="z6cvf8_14"><p>rotate()</p></li><li class="list__item" id="z6cvf8_15"><p>scaleX()</p></li><li class="list__item" id="z6cvf8_16"><p>scaleY()</p></li><li class="list__item" id="z6cvf8_17"><p>scale()</p></li><li class="list__item" id="z6cvf8_18"><p>skewX()</p></li><li class="list__item" id="z6cvf8_19"><p>skewY()</p></li><li class="list__item" id="z6cvf8_20"><p>skew()</p></li><li class="list__item" id="z6cvf8_21"><p>matrix()</p></li></ul><section class="chapter"><h2 id="translate" data-toc="translate"><code class="code" id="z6cvf8_30">translate()</code></h2><p id="z6cvf8_23">Moves an element from it's current position.</p><div class="code-block" data-lang="css">
+transform: translate(x, y);
+</div><ul class="list _bullet" id="z6cvf8_25"><li class="list__item" id="z6cvf8_31"><p>x: Horizontal movement.</p></li><li class="list__item" id="z6cvf8_32"><p>y: Vertical movement.</p></li></ul><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello, world&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  transform: translate(400px, 300px);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+}
+</div><p id="z6cvf8_28">You can also use <code class="code" id="z6cvf8_33">translateX()</code> to move an element in the horizontal direction and <code class="code" id="z6cvf8_34">translateY()</code> to move an element in the vertical direction.</p><div class="code-block" data-lang="css">
+div {
+  transform: translateX(300px) translateY(300px);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+}
+</div></section><section class="chapter"><h2 id="rotate" data-toc="rotate"><code class="code" id="z6cvf8_40">rotate()</code></h2><p id="z6cvf8_36">Rotates an element clockwise or counterclockwise around its origin.</p><p id="z6cvf8_37">The value is supplied in degree units i.e. <code class="code" id="z6cvf8_41">deg</code>.</p><div class="code-block" data-lang="css">
+div {
+  transform: rotate(45deg);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+}
+</div><figure id="z6cvf8_39"><img alt="rotate" src="images/rotate.png" title="rotate" width="719" height="655"></figure></section><section class="chapter"><h2 id="scalex" data-toc="scalex"><code class="code" id="z6cvf8_47">scaleX()</code></h2><p id="z6cvf8_43">Scales the width of an element along the horizontal axis.</p><p id="z6cvf8_44">The value passed does not take any units as it is a ratio value.</p><div class="code-block" data-lang="css">
+div {
+  transform: scaleX(2);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+}
+</div><figure id="z6cvf8_46"><img alt="scaleX()" src="images/scale-x.png" title="scaleX()" width="777" height="467"></figure></section><section class="chapter"><h2 id="scaley" data-toc="scaley"><code class="code" id="z6cvf8_53">scaleY()</code></h2><p id="z6cvf8_49">Scales an element along the vertical axis.</p><p id="z6cvf8_50">The value passed does not take any units as it is a ratio value.</p><div class="code-block" data-lang="css">
+div {
+  transform: scaleY(2);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  margin: 100px;
+}
+</div><figure id="z6cvf8_52"><img alt="scaleY()" src="images/scale-y.png" title="scaleY()" width="396" height="757"></figure></section><section class="chapter"><h2 id="skewx" data-toc="skewx"><code class="code" id="z6cvf8_59">skewX()</code></h2><p id="z6cvf8_55">Skews an element along the horizontal axis.</p><p id="z6cvf8_56">Value is passed in degree units.</p><div class="code-block" data-lang="css">
+div {
+  transform: skewX(30deg);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  margin: 100px;
+}
+</div><figure id="z6cvf8_58"><img alt="skewX()" src="images/skew-x.png" title="skewX()" width="637" height="475"></figure></section><section class="chapter"><h2 id="skewy" data-toc="skewy"><code class="code" id="z6cvf8_65">skewY()</code></h2><p id="z6cvf8_61">Skews an element along the vertical axis.</p><p id="z6cvf8_62">Value is passed in degree units.</p><div class="code-block" data-lang="css">
+div {
+  transform: skewY(30deg);
+
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  margin: 100px;
+}
+</div><figure id="z6cvf8_64"><img alt="skewY()" src="images/skew-y.png" title="skewY()" width="580" height="658"></figure></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="shadow-effects.html" class="navigation-links__prev">Shadow Effects</a><a href="css-transitions.html" class="navigation-links__next">CSS Transitions</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.593319"><title>The Display Property | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"block","level":0,"title":"block","anchor":"#block"},{"id":"inline","level":0,"title":"inline","anchor":"#inline"},{"id":"flex","level":0,"title":"flex","anchor":"#flex"},{"id":"grid","level":0,"title":"grid","anchor":"#grid"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="The Display Property | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/the-display-property.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="The Display Property | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/the-display-property.html#webpage",
+    "url": "writerside-documentation/the-display-property.html",
+    "name": "The Display Property | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="The-Display-Property" data-main-title="The Display Property" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="The-Display-Property" id="The-Display-Property.md">The Display Property</h1><p id="nounc7_3">The CSS display property defines how an element is displayed on the page and determines the layout behavior of the element and its children.</p><p id="nounc7_4">The common values of display are: <code class="code" id="nounc7_9">block</code>, <code class="code" id="nounc7_10">inline</code>, <code class="code" id="nounc7_11">inline-block</code>, <code class="code" id="nounc7_12">none</code>, <code class="code" id="nounc7_13">flex</code>, <code class="code" id="nounc7_14">grid</code>, <code class="code" id="nounc7_15">inline-flex</code>, and <code class="code" id="nounc7_16">inline-grid</code>.</p><section class="chapter"><h2 id="block" data-toc="block">block</h2><p id="nounc7_17">Makes an element a block level element, taking up the full width of its container.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+&lt;/div&gt;
+</div><p id="nounc7_19">The anchor tags are inline elements, which means they take up only the space they need. <figure id="nounc7_23"><img alt="before" src="images/displa-block-before.png" title="before" width="915" height="137"></figure></p><p id="nounc7_20">We can make them occupy the entire parent width using <code class="code" id="nounc7_24">display: block;</code></p><div class="code-block" data-lang="css">
+a {
+  display: block;
+  border: 1px solid red;
+}
+</div><figure id="nounc7_22"><img alt="after" src="images/display-block-after.png" title="after" width="917" height="201"></figure></section><section class="chapter"><h2 id="inline" data-toc="inline">inline</h2><p id="nounc7_25">Makes the element an inline-level element, only as wide as its content, without starting a new line.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;service 1&lt;/h2&gt;
+    &lt;h2&gt;service 2&lt;/h2&gt;
+    &lt;h2&gt;service 3&lt;/h2&gt;
+&lt;/div&gt;
+</div><p id="nounc7_27">Before: <figure id="nounc7_30"><img alt="before" src="images/display-inline-before.png" title="before" width="320" height="277"></figure></p><div class="code-block" data-lang="css">
+h2 {
+  display: inline;
+}
+</div><p id="nounc7_29">After: <figure id="nounc7_31"><img alt="after" src="images/display-inline-after.png" title="after" width="620" height="54"></figure></p></section><section class="chapter"><h2 id="flex" data-toc="flex">flex</h2><p id="nounc7_32">Turns an element into a flex container, the element also becomes a block level element (more about this later).</p><p id="nounc7_33"><code class="code" id="nounc7_34">inline-flex</code> is similar to <code class="code" id="nounc7_35">flex</code> but the element is displayed inline.</p></section><section class="chapter"><h2 id="grid" data-toc="grid">grid</h2><p id="nounc7_36">Turns an element into a grid container, the element also becomes a block level element (more about this later).</p><p id="nounc7_37"><code class="code" id="nounc7_38">inline-grid</code> is similar to <code class="code" id="nounc7_39">grid</code> but the element is displayed inline.</p></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="outline.html" class="navigation-links__prev">Outline</a><a href="position.html" class="navigation-links__next">Position</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

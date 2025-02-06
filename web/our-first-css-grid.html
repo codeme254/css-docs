@@ -1,0 +1,94 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.541825"><title>Our First CSS Grid | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"turning-an-element-into-a-grid-container","level":0,"title":"Turning an element into a grid container","anchor":"#turning-an-element-into-a-grid-container"},{"id":"defining-rows-and-columns","level":0,"title":"Defining rows and columns","anchor":"#defining-rows-and-columns"},{"id":"adding-gutters-with-row-gap-and-column-gap","level":0,"title":"Adding gutters with row-gap and column-gap","anchor":"#adding-gutters-with-row-gap-and-column-gap"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Our First CSS Grid | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/our-first-css-grid.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Our First CSS Grid | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/our-first-css-grid.html#webpage",
+    "url": "writerside-documentation/our-first-css-grid.html",
+    "name": "Our First CSS Grid | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Our-First-CSS-Grid" data-main-title="Our First CSS Grid" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="CSS-Grid.md|CSS Grid"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Our-First-CSS-Grid" id="Our-First-CSS-Grid.md">Our First CSS Grid</h1><div class="code-block" data-lang="markup">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;item item--1&quot;&gt;1: orange&lt;/div&gt;
+    &lt;div class=&quot;item item--2&quot;&gt;2: green&lt;/div&gt;
+    &lt;div class=&quot;item item--3&quot;&gt;3: violet&lt;/div&gt;
+    &lt;div class=&quot;item item--4&quot;&gt;4: pink&lt;/div&gt;
+    &lt;div class=&quot;item item--5&quot;&gt;5: blue&lt;/div&gt;
+    &lt;div class=&quot;item item--6&quot;&gt;6: brown&lt;/div&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 30px auto;
+}
+</div><section class="chapter"><h2 id="turning-an-element-into-a-grid-container" data-toc="turning-an-element-into-a-grid-container">Turning an element into a grid container</h2><p id="-c3jowb_8">To turn an element into a grid container, we set its display property to grid.</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+}
+</div></section><section class="chapter"><h2 id="defining-rows-and-columns" data-toc="defining-rows-and-columns">Defining rows and columns</h2><p id="-c3jowb_10">We can use <code class="code" id="-c3jowb_23">grid-template-rows</code> to define the height and structure of rows within a CSS Grid layout.</p><p id="-c3jowb_11">Assume we want two rows in our grid, each 200px in height:</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+}
+</div><figure id="-c3jowb_13"><img alt="grid-template-rows: 200px 200px;" src="images/grid-template-rows.png" title="grid-template-rows: 200px 200px;" width="1530" height="741"></figure><p id="-c3jowb_14">This creates two tracks for the rows.</p><p id="-c3jowb_15">Similarly, we can use <code class="code" id="-c3jowb_24">grid-template-columns</code> to define the width and structure of columns within a CSS Grid layout.</p><p id="-c3jowb_16">Assume we want three columns in our grid, each 200px wide:</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+}
+</div><figure id="-c3jowb_18"><img alt="combining rows and columns" src="images/grid-template-rows-and-columns.png" title="combining rows and columns" width="1520" height="606"></figure><p id="-c3jowb_19">This creates three tracks for the columns.</p><p id="-c3jowb_20">Complete the set-up:</p><div class="code-block" data-lang="css">
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.item--1 {
+  background-color: orange;
+}
+
+.item--2 {
+  background-color: green;
+}
+
+.item--3 {
+  background-color: violet;
+}
+
+.item--4 {
+  background-color: pink;
+}
+
+.item--5 {
+  background-color: blue;
+}
+
+.item--6 {
+  background-color: brown;
+}
+</div><figure id="-c3jowb_22"><img alt="grid complete setup" src="images/grid-complete-setup.png" title="grid complete setup" width="1517" height="631"></figure></section><section class="chapter"><h2 id="adding-gutters-with-row-gap-and-column-gap" data-toc="adding-gutters-with-row-gap-and-column-gap">Adding gutters with <code class="code" id="-c3jowb_29">row-gap</code> and <code class="code" id="-c3jowb_30">column-gap</code></h2><p id="-c3jowb_26">We can have space between the grid items and this is called a gutter.</p><section class="chapter"><h3 id="row-gap" data-toc="row-gap"><code class="code" id="-c3jowb_35">row-gap</code></h3><p id="-c3jowb_32">Adds vertical spacing (gutter) between adjacent rows in a grid layout.</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+
+  row-gap: 30px;
+}
+</div><figure id="-c3jowb_34"><img alt="row-gap" src="images/row-gap.png" title="row-gap" width="1591" height="740"></figure></section><section class="chapter"><h3 id="column-gap" data-toc="column-gap"><code class="code" id="-c3jowb_41">column-gap</code></h3><p id="-c3jowb_37">Adds horizontal spacing (gutter) between adjacent columns in a grid layout.</p><div class="code-block" data-lang="css">
+.container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+</div><figure id="-c3jowb_39"><img alt="column-gap" src="images/column-gap.png" title="column-gap" width="1559" height="697"></figure><p id="-c3jowb_40">If you want to use same-sized gutter in the row and column, you can use the <code class="code" id="-c3jowb_42">gap</code> property.</p></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-grid.html" class="navigation-links__prev">CSS Grid</a><a href="the-repeat-keyword-and-fr-unit.html" class="navigation-links__next">The repeat keyword and fr unit</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

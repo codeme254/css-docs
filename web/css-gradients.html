@@ -1,0 +1,80 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5968172"><title>CSS Gradients | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"linear-gradient","level":0,"title":"linear-gradient","anchor":"#linear-gradient"},{"id":"radial-gradient","level":0,"title":"radial-gradient","anchor":"#radial-gradient"},{"id":"conic-gradient","level":0,"title":"conic-gradient","anchor":"#conic-gradient"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Gradients | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-gradients.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Gradients | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-gradients.html#webpage",
+    "url": "writerside-documentation/css-gradients.html",
+    "name": "CSS Gradients | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Gradients" data-main-title="CSS Gradients" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Gradients" id="CSS-Gradients.md">CSS Gradients</h1><p id="-7kv4du_3">Gradients are a type of background feature in CSS that allows for smooth transitions between colors.</p><p id="-7kv4du_4">Gradients can be used to apply background effects on an element without the need for an external image.</p><p id="-7kv4du_5">Gradients are declared using the <code class="code" id="-7kv4du_11">background</code> or <code class="code" id="-7kv4du_12">background-image</code> property</p><p id="-7kv4du_6">There are three major types of gradients in CSS:</p><ul class="list _bullet" id="-7kv4du_7"><li class="list__item" id="-7kv4du_13"><p>Linear gradient</p></li><li class="list__item" id="-7kv4du_14"><p>Radial gradient</p></li><li class="list__item" id="-7kv4du_15"><p>Conic gradient</p></li></ul><section class="chapter"><h2 id="linear-gradient" data-toc="linear-gradient"><code class="code" id="-7kv4du_33">linear-gradient</code></h2><p id="-7kv4du_17">Linear gradients transition colors along a straight line.</p><p id="-7kv4du_18">You can optionally define the direction (e.g., <code class="code" id="-7kv4du_34">to right</code>, to <code class="code" id="-7kv4du_35">bottom-left</code>) and specify multiple color stops.</p><p id="-7kv4du_19">Here is the syntax</p><div class="code-block" data-lang="css">
+background: linear-gradient(direction, color-stop1, color-stop2, ...;
+</div><p id="-7kv4du_21">Examples:</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: linear-gradient(red, green, blue, orange);
+}
+</div><figure id="-7kv4du_24"><img alt="basic linear gradient" src="images/basic-linear-gradient.png" title="basic linear gradient" width="1894" height="847"></figure><p id="-7kv4du_25">We can use the keywords <code class="code" id="-7kv4du_36">top</code>, <code class="code" id="-7kv4du_37">bottom</code>, <code class="code" id="-7kv4du_38">right</code> and <code class="code" id="-7kv4du_39">left</code> to define the direction of a linear gradient.</p><p id="-7kv4du_26">The gradient below goes to the right</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: linear-gradient(to right,red, green, blue, orange);
+}
+</div><figure id="-7kv4du_28"><img alt="linear gradient to right" src="images/linear-gradient-to-right.png" title="linear gradient to right" width="1900" height="854"></figure><p id="-7kv4du_29">We can also combine these keywords, the gradient below goes to the bottom right for example:</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: linear-gradient(to bottom right,red, green, blue, orange);
+}
+</div><figure id="-7kv4du_31"><img alt="linear gradient to bottom right" src="images/gradient-to-bottom-right.png" title="linear gradient to bottom right" width="1897" height="837"></figure><section class="chapter"><h3 id="repeating-linear-gradient" data-toc="repeating-linear-gradient"><code class="code" id="-7kv4du_46">repeating-linear-gradient</code></h3><p id="-7kv4du_41">We can also create repetition patterns for <code class="code" id="-7kv4du_47">linear-gradient</code> using <code class="code" id="-7kv4du_48">repeating-linear-gradient</code>:</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: repeating-linear-gradient(red, green 40px);
+}
+</div><figure id="-7kv4du_43"><img alt="repeating linear gradient" src="images/repeating-linear-gradient.png" title="repeating linear gradient" width="1895" height="839"></figure><p id="-7kv4du_44">The <code class="code" id="-7kv4du_49">40px</code> value at the end defines the distance at which the gradient starts repeating.</p><p id="-7kv4du_45">Here, the browser will render a gradient that transitions from red to green and after <code class="code" id="-7kv4du_50">40px</code> the pattern will repeat itself.</p></section></section><section class="chapter"><h2 id="radial-gradient" data-toc="radial-gradient"><code class="code" id="-7kv4du_60">radial-gradient</code></h2><p id="-7kv4du_52">Radial gradients transition colors outward in a circular or elliptical pattern from a central point.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello, world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+   height: 550px;
+   background-image: radial-gradient(red, yellow, green);
+}
+</div><figure id="-7kv4du_55"><img alt="radial gradient" src="images/radial-gradient.png" title="radial gradient" width="1893" height="848"></figure><p id="-7kv4du_56">You can also specify a shape for the radial gradient as either <code class="code" id="-7kv4du_61">ellipse</code> or <code class="code" id="-7kv4du_62">circle</code>, the default is <code class="code" id="-7kv4du_63">ellipse</code>.</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+</div><figure id="-7kv4du_58"><img alt="circular radial gradient" src="images/circle-radial-gradient.png" title="circular radial gradient" width="1896" height="848"></figure><section class="chapter"><h3 id="repeating-radial-gradient" data-toc="repeating-radial-gradient"><code class="code" id="-7kv4du_68">repeating-radial-gradient</code></h3><p id="-7kv4du_65">We can also create repetition patterns for <code class="code" id="-7kv4du_69">radial-gradient</code> using <code class="code" id="-7kv4du_70">repeating-radial-gradient</code>:</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: repeating-radial-gradient(circle,red, green 40px);
+}
+</div><figure id="-7kv4du_67"><img alt="repeating radial gradient" src="images/repeating-radial-gradient.png" title="repeating radial gradient" width="1899" height="839"></figure></section></section><section class="chapter"><h2 id="conic-gradient" data-toc="conic-gradient"><code class="code" id="-7kv4du_80">conic-gradient</code></h2><p id="-7kv4du_72">Conic gradients transition colors around a center point, similar to a pie chart.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h1&gt;Hello, world&lt;/h1&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background-image: conic-gradient(red, yellow, green, orange, blue);
+}
+</div><figure id="-7kv4du_75"><img alt="conic gradient" src="images/conic-gradient.png" title="conic gradient" width="1896" height="836"></figure><p id="-7kv4du_76">You can optionally specify an angle.</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background-image: conic-gradient(from 80deg,red, yellow, green, orange, blue);
+}
+</div><figure id="-7kv4du_78"><img alt="conic gradient with angle specified" src="images/angled-conic-gradient.png" title="conic gradient with angle specified" width="1896" height="839"></figure><section class="chapter"><h3 id="repeating-conic-gradient" data-toc="repeating-conic-gradient"><code class="code" id="-7kv4du_86">repeating-conic-gradient</code></h3><p id="-7kv4du_82">We can also create repetition patterns for <code class="code" id="-7kv4du_87">conic-gradient</code> using <code class="code" id="-7kv4du_88">repeating-conic-gradient</code>.</p><p id="-7kv4du_83">In <code class="code" id="-7kv4du_89">repeating-conic-gradient</code>, we don't specify the repetition distance in px as in <code class="code" id="-7kv4du_90">repeating-linear-gradient</code> and <code class="code" id="-7kv4du_91">repeating-radial-gradient</code>, we use <code class="code" id="-7kv4du_92">deg</code> (degrees) instead.</p><div class="code-block" data-lang="css">
+div {
+  height: 550px;
+  background: repeating-conic-gradient(red, green 40deg);
+}
+</div><figure id="-7kv4du_85"><img alt="repeating conic gradient" src="images/repeating-conic-gradient.png" title="repeating conic gradient" width="1898" height="851"></figure></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-backgrounds.html" class="navigation-links__prev">CSS Backgrounds</a><a href="advanced-selectors.html" class="navigation-links__next">Advanced Selectors</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5650042"><title>Outline | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"individual-outline-properties","level":0,"title":"Individual Outline Properties","anchor":"#individual-outline-properties"},{"id":"outline-shorthand","level":0,"title":"outline shorthand","anchor":"#outline-shorthand"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Outline | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/outline.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Outline | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/outline.html#webpage",
+    "url": "writerside-documentation/outline.html",
+    "name": "Outline | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Outline" data-main-title="Outline" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Outline" id="Outline.md">Outline</h1><p id="-munfcr_3">The CSS <code class="code" id="-munfcr_7">outline</code> property is used to draw a line around an element, outside its border edge, for emphasis or visual distinction.</p><p id="-munfcr_4">Unlike border, the outline does not affect the layout of the element, meaning it doesn't take up space.</p><section class="chapter"><h2 id="individual-outline-properties" data-toc="individual-outline-properties">Individual Outline Properties</h2><section class="chapter"><h3 id="outline-style" data-toc="outline-style"><code class="code" id="-munfcr_18">outline-style</code></h3><p id="-munfcr_13">Sets the style of the outline.</p><p id="-munfcr_14">Options include: <code class="code" id="-munfcr_19">solid</code>, <code class="code" id="-munfcr_20">dotted</code>, <code class="code" id="-munfcr_21">dashed</code>, <code class="code" id="-munfcr_22">double</code>, <code class="code" id="-munfcr_23">groove</code> e.t.c.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;solid&quot;&gt;
+    &lt;h2&gt;solid&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dotted&quot;&gt;
+    &lt;h2&gt;dotted&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;double&quot;&gt;
+    &lt;h2&gt;double&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dashed&quot;&gt;
+    &lt;h2&gt;dashed&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.solid {
+  outline-style: solid;
+}
+
+.dotted {
+  outline-style: dotted;
+}
+
+.double {
+  outline-style: double;
+}
+
+.dashed {
+  outline-style: dashed;
+}
+</div><figure id="-munfcr_17"><img alt="outline style" src="images/outline-style.png" title="outline style" width="883" height="412"></figure></section><section class="chapter"><h3 id="outline-width" data-toc="outline-width"><code class="code" id="-munfcr_29">outline-width</code></h3><p id="-munfcr_25">Specifies the thickness of the outline.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;h2&gt;Hello, World&lt;/h2&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  outline-style: solid;
+  outline-width: 8px;
+}
+</div><figure id="-munfcr_28"><img alt="outline width" src="images/outline-width.png" title="outline width" width="903" height="108"></figure></section><section class="chapter"><h3 id="outline-color" data-toc="outline-color"><code class="code" id="-munfcr_34">outline-color</code></h3><p id="-munfcr_31">Specifies the color of the outline.</p><div class="code-block" data-lang="css">
+div {
+  outline-style: solid;
+  outline-width: 8px;
+  outline-color: crimson;
+}
+</div><figure id="-munfcr_33"><img alt="outline-color" src="images/outline-color.png" title="outline-color" width="899" height="103"></figure></section><section class="chapter"><h3 id="outline-offset" data-toc="outline-offset"><code class="code" id="-munfcr_39">outline-offset</code></h3><p id="-munfcr_36">Specifies the space between the border and the outline.</p><div class="code-block" data-lang="css">
+div {
+  border: 5px solid green;
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: crimson;
+  outline-offset: 30px;
+}
+</div><figure id="-munfcr_38"><img alt="outline-offset" src="images/outline-offset.png" title="outline-offset" width="897" height="336"></figure></section></section><section class="chapter"><h2 id="outline-shorthand" data-toc="outline-shorthand"><code class="code" id="-munfcr_44">outline</code> shorthand</h2><p id="-munfcr_41">You can specify the <code class="code" id="-munfcr_45">outline-style</code>, <code class="code" id="-munfcr_46">outline-width</code> and <code class="code" id="-munfcr_47">outline-color</code> in one declaration using the <code class="code" id="-munfcr_48">outline</code> shorthand as shown.</p><div class="code-block" data-lang="css">
+div {
+  outline: solid 3px green;
+}
+</div><figure id="-munfcr_43"><img alt="outline shorthand" src="images/outline-shorthand.png" title="outline shorthand" width="925" height="95"></figure></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="box-model.html" class="navigation-links__prev">Box Model</a><a href="the-display-property.html" class="navigation-links__next">The Display Property</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

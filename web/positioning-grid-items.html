@@ -1,0 +1,40 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5830941"><title>Positioning Grid Items | CSS</title><script type="application/json" id="virtual-toc-data">[]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Positioning Grid Items | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/positioning-grid-items.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Positioning Grid Items | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/positioning-grid-items.html#webpage",
+    "url": "writerside-documentation/positioning-grid-items.html",
+    "name": "Positioning Grid Items | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Positioning-Grid-Items" data-main-title="Positioning Grid Items" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="CSS-Grid.md|CSS Grid"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Positioning-Grid-Items" id="Positioning-Grid-Items.md">Positioning Grid Items</h1><p id="f641h2_3">We can position items wherever we want on the grid.</p><p id="f641h2_4">So far, all our grid items are laid out in their source order.</p><p id="f641h2_5">We can place a grid item where we want, let's for example reposition the first item with the orange background to a different grid cell.</p><p id="f641h2_6">We can do this using the <code class="code" id="f641h2_15">grid-row-start</code>, <code class="code" id="f641h2_16">grid-row-end</code> and <code class="code" id="f641h2_17">grid-column-start</code>, <code class="code" id="f641h2_18">grid-column-end</code> properties as shown</p><div class="code-block" data-lang="css">
+.item--1 {
+  background-color: orange;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+</div><figure id="f641h2_8"><img alt="positioning a grid item" src="images/position-grid-item.png" title="positioning a grid item" width="1543" height="542"></figure><p id="f641h2_9">We can simplify the code above using <code class="code" id="f641h2_19">grid-row</code> and <code class="code" id="f641h2_20">grid-column</code></p><div class="code-block" data-lang="css">
+grid-row: START / END;
+grid-column: START / END;
+</div><div class="code-block" data-lang="css">
+.item--1 {
+  background-color: orange;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+</div><p id="f641h2_12">We can simplify the above code even further using <code class="code" id="f641h2_21">grid-area</code> property:</p><div class="code-block" data-lang="css">
+grid-area: ROW-START / COLUMN-START / ROW-END / COLUMN-END;
+</div><div class="code-block" data-lang="css">
+.item--1 {
+  background-color: orange;
+  grid-area: 2 / 2 / 3 / 3;
+}
+</div><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="the-repeat-keyword-and-fr-unit.html" class="navigation-links__prev">The repeat keyword and fr unit</a><a href="spanning-grid-items.html" class="navigation-links__next">Spanning Grid Items</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

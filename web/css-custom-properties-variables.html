@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.5428339"><title>CSS Custom properties (variables) | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"defining-css-custom-properties","level":0,"title":"Defining CSS Custom Properties","anchor":"#defining-css-custom-properties"},{"id":"using-css-custom-properties","level":0,"title":"Using CSS custom properties","anchor":"#using-css-custom-properties"},{"id":"fallback-values","level":0,"title":"fallback values","anchor":"#fallback-values"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Custom properties (variables) | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-custom-properties-variables.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Custom properties (variables) | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-custom-properties-variables.html#webpage",
+    "url": "writerside-documentation/css-custom-properties-variables.html",
+    "name": "CSS Custom properties (variables) | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Custom-properties-variables" data-main-title="CSS Custom properties (variables)" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Custom-properties-variables" id="CSS-Custom-properties-variables.md">CSS Custom properties (variables)</h1><p id="ib97q0_3">Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that represent specific values to be reused throughout a document.</p><p id="ib97q0_4">Complex websites have very large amounts of CSS, and this often results in a lot of repeated CSS values.</p><p id="ib97q0_5">For example, it's common to see the same color used in hundreds of different places in stylesheets. Changing a color that's been duplicated in many places requires a search and replace across all rules and CSS files.</p><p id="ib97q0_6">Custom properties allow a value to be defined in one place, then referenced in multiple other places so that it's easier to work with.</p><section class="chapter"><h2 id="defining-css-custom-properties" data-toc="defining-css-custom-properties">Defining CSS Custom Properties</h2><p id="ib97q0_10">CSS variables are defined within a CSS rule, typically inside the :root pseudo-class for global scope.</p><p id="ib97q0_11">A custom property is prefixed with <code class="code" id="ib97q0_16">--</code>, followed by the property name (e.g., --my-property), and a property value that can be any valid CSS value.</p><p id="ib97q0_12">syntax</p><div class="code-block" data-lang="css">
+--variable-name: value;
+</div><p id="ib97q0_14">example</p><div class="code-block" data-lang="css">
+:root {
+  --primary-color: #3498db;
+  --font-medium-size: 16px;
+}
+</div></section><section class="chapter"><h2 id="using-css-custom-properties" data-toc="using-css-custom-properties">Using CSS custom properties</h2><p id="ib97q0_17">To use a css variable/custom properties, reference them with the <code class="code" id="ib97q0_19">var()</code> function.</p><div class="code-block" data-lang="css">
+:root {
+  --primary-color: #3498db;
+  --font-medium-size: 16px;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: var(--font-medium-size);
+}
+</div></section><section class="chapter"><h2 id="fallback-values" data-toc="fallback-values">fallback values</h2><p id="ib97q0_20">CSS variables can have fallback values if the variable is not defined.</p><div class="code-block" data-lang="css">
+:root {
+  --primary-color: #3498db;
+  --font-medium-size: 16px;
+}
+
+h2 {
+  color: var(--primary-color, red);
+  font-size: var(--font-medium-size, 18px);
+}
+</div></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-animations.html" class="navigation-links__prev">CSS Animations</a><a href="css-flexbox.html" class="navigation-links__next">CSS Flexbox</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

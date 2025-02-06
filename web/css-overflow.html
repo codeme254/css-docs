@@ -1,0 +1,51 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6423494"><title>CSS Overflow | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"visible-default","level":0,"title":"visible (default)","anchor":"#visible-default"},{"id":"hidden","level":0,"title":"hidden","anchor":"#hidden"},{"id":"scroll","level":0,"title":"scroll","anchor":"#scroll"},{"id":"auto","level":0,"title":"auto","anchor":"#auto"},{"id":"overflow-x-and-overflow-y","level":0,"title":"overflow-x and overflow-y","anchor":"#overflow-x-and-overflow-y"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Overflow | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/css-overflow.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Overflow | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/css-overflow.html#webpage",
+    "url": "writerside-documentation/css-overflow.html",
+    "name": "CSS Overflow | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="CSS-Overflow" data-main-title="CSS Overflow" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="CSS-Overflow" id="CSS-Overflow.md">CSS Overflow</h1><p id="-v7xwp_3">The overflow property in CSS controls how content is displayed when it overflows the boundaries of its container.</p><p id="-v7xwp_4">It is commonly used to manage scrollbars or hide excess content.</p><p id="-v7xwp_5">The overflow property takes the following values:</p><ul class="list _bullet" id="-v7xwp_6"><li class="list__item" id="-v7xwp_12"><p><span class="control" id="-v7xwp_16">visible (default)</span></p></li><li class="list__item" id="-v7xwp_13"><p><span class="control" id="-v7xwp_17">hidden</span></p></li><li class="list__item" id="-v7xwp_14"><p><span class="control" id="-v7xwp_18">scroll</span></p></li><li class="list__item" id="-v7xwp_15"><p><span class="control" id="-v7xwp_19">auto</span></p></li></ul><section class="chapter"><h2 id="visible-default" data-toc="visible-default"><code class="code" id="-v7xwp_26">visible</code> (default)</h2><p id="-v7xwp_21">Behavior: Content that overflows the container is not clipped and remains visible outside the container's boundaries.</p><p id="-v7xwp_22">Rarely used deliberately; suitable when overflow content should be fully displayed without restrictions.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum,
+      accusantium similique voluptas natus tempora unde mollitia doloribus,
+      explicabo perferendis nisi atque dicta! Enim explicabo nesciunt incidunt
+      iure, facilis inventore.
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+div {
+  width: 200px;
+  height: 100px;
+  border: 2px solid red;
+  overflow: visible; /* default */
+}
+</div><figure id="-v7xwp_25"><img alt="overflow: visible;" src="images/overflow-visible.png" title="overflow: visible;" width="407" height="322"></figure></section><section class="chapter"><h2 id="hidden" data-toc="hidden"><code class="code" id="-v7xwp_31">hidden</code></h2><p id="-v7xwp_28">Content that overflows the container is clipped and hidden from view.</p><div class="code-block" data-lang="css">
+div {
+  width: 200px;
+  height: 100px;
+  border: 2px solid red;
+  overflow: hidden;
+}
+</div><figure id="-v7xwp_30"><img alt="overflow: hidden;" src="images/overflow-hidden.png" title="overflow: hidden;" width="404" height="219"></figure></section><section class="chapter"><h2 id="scroll" data-toc="scroll"><code class="code" id="-v7xwp_38">scroll</code></h2><p id="-v7xwp_33">Content that overflows is clipped, but scrollbars are always added to scroll to see the content (even if not necessary).</p><div class="code-block" data-lang="css">
+div {
+  width: 200px;
+  height: 100px;
+  border: 2px solid red;
+  overflow: scroll;
+}
+</div><figure id="-v7xwp_35"><img alt="overflow: scroll;" src="images/overflow-scroll.png" title="overflow: scroll;" width="420" height="209"></figure><figure id="-v7xwp_36"><img alt="overflow:scroll;" src="images/overflow-scroll-2.png" title="overflow:scroll;" width="417" height="235"></figure><p id="-v7xwp_37">In the example above, the scroll bars appear even when not necessary (when content is not overflowing), the <code class="code" id="-v7xwp_39">auto</code> value fixes this.</p></section><section class="chapter"><h2 id="auto" data-toc="auto"><code class="code" id="-v7xwp_45">auto</code></h2><p id="-v7xwp_41">Content that overflows is clipped, and scrollbars appear only when necessary.</p><div class="code-block" data-lang="css">
+div {
+  width: 200px;
+  height: 100px;
+  border: 2px solid red;
+  overflow: auto;
+}
+</div><figure id="-v7xwp_43"><img alt="overflow: auto;" src="images/overflow-auto.png" title="overflow: auto;" width="378" height="213"></figure><figure id="-v7xwp_44"><img alt="overflow: auto;" src="images/overflow-auto-2.png" title="overflow: auto;" width="390" height="204"></figure></section><section class="chapter"><h2 id="overflow-x-and-overflow-y" data-toc="overflow-x-and-overflow-y"><code class="code" id="-v7xwp_49">overflow-x</code> and <code class="code" id="-v7xwp_50">overflow-y</code></h2><p id="-v7xwp_47">The overflow-x and overflow-y properties control the overflow behavior for the horizontal (x) and vertical (y) axes independently.</p><p id="-v7xwp_48">The values are similar to the overflow property and behave similar.</p></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="position.html" class="navigation-links__prev">Position</a><a href="css-math-functions.html" class="navigation-links__next">CSS Math functions</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#DC143C" data-link-color="#DE3358" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-06T06:56:55.6348201"><title>Advanced Selectors | CSS</title><script type="application/json" id="virtual-toc-data">[{"id":"combinator-selectors","level":0,"title":"Combinator selectors","anchor":"#combinator-selectors"},{"id":"pseudo-classes","level":0,"title":"Pseudo-classes","anchor":"#pseudo-classes"},{"id":"attribute-selectors","level":0,"title":"Attribute selectors","anchor":"#attribute-selectors"},{"id":"pseudo-elements","level":0,"title":"Pseudo-elements","anchor":"#pseudo-elements"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Advanced Selectors | CSS"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="CSS Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/advanced-selectors.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Advanced Selectors | CSS"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/advanced-selectors.html#webpage",
+    "url": "writerside-documentation/advanced-selectors.html",
+    "name": "Advanced Selectors | CSS",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "CSS Help"
+}</script><!-- End Schema.org --></head><body data-id="Advanced-Selectors" data-main-title="Advanced Selectors" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>CSS  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Advanced-Selectors" id="Advanced-Selectors.md">Advanced Selectors</h1><p id="-o1sczq_3">Some advanced selectors in CSS are:</p><ul class="list _bullet" id="-o1sczq_4"><li class="list__item" id="-o1sczq_9"><p>Combinator selectors</p></li><li class="list__item" id="-o1sczq_10"><p>Pseudo-classes</p></li><li class="list__item" id="-o1sczq_11"><p>Attribute selectors</p></li><li class="list__item" id="-o1sczq_12"><p>Pseudo-elements</p></li><li class="list__item" id="-o1sczq_13"><p>Compound selectors</p></li></ul><section class="chapter"><h2 id="combinator-selectors" data-toc="combinator-selectors">Combinator selectors</h2><p id="-o1sczq_14">Combinator selectors allow you to style elements based on their relationship with other elements.</p><p id="-o1sczq_15">There are four main types of combinator selectors:</p><ul class="list _bullet" id="-o1sczq_16"><li class="list__item" id="-o1sczq_21"><p>Descendant selector</p></li><li class="list__item" id="-o1sczq_22"><p>Direct child selector</p></li><li class="list__item" id="-o1sczq_23"><p>Adjacent sibling selector</p></li><li class="list__item" id="-o1sczq_24"><p>General sibling selector</p></li></ul><section class="chapter"><h3 id="descendant-selector" data-toc="descendant-selector">Descendant selector (<code class="code" id="-o1sczq_32"></code>)</h3><p id="-o1sczq_26">The descendant selector selects elements that are descendants (children, grandchildren, e.t.c) of another selector.</p><p id="-o1sczq_27">The syntax is:</p><div class="code-block" data-lang="css">
+ancestor descendant {
+    /* styles */
+}
+</div><div class="code-block" data-lang="markup">
+&lt;div class=&quot;parent&quot;&gt;
+    &lt;p&gt;Roses are &lt;/p&gt;
+    &lt;div&gt;
+        &lt;p&gt;violets are blue&lt;/p&gt;
+        &lt;div&gt;
+            &lt;p&gt;CSS is fun&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.parent p {
+   background-color: crimson;
+}
+</div><figure id="-o1sczq_31"><img alt="direct child" src="images/direct-child.png" title="direct child" width="901" height="186"></figure></section><section class="chapter"><h3 id="direct-child-selector" data-toc="direct-child-selector">Direct child selector (<code class="code" id="-o1sczq_40">&gt;</code>)</h3><p id="-o1sczq_34">The direct child selector selects only the direct child of an element.</p><p id="-o1sczq_35">The syntax is:</p><div class="code-block" data-lang="css">
+parent &gt; child {
+  /*styles*/
+}
+</div><div class="code-block" data-lang="markup">
+&lt;div class=&quot;parent&quot;&gt;
+    &lt;p&gt;Roses are &lt;/p&gt;
+    &lt;div&gt;
+        &lt;p&gt;violets are blue&lt;/p&gt;
+        &lt;div&gt;
+            &lt;p&gt;CSS is fun&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+.parent &gt; p {
+   background-color: crimson;
+}
+</div><figure id="-o1sczq_39"><img alt="direct child selector" src="images/direct-child-selector.png" title="direct child selector" width="894" height="190"></figure></section><section class="chapter"><h3 id="adjacent-sibling-selector" data-toc="adjacent-sibling-selector">Adjacent sibling selector (<code class="code" id="-o1sczq_48">+</code>)</h3><p id="-o1sczq_42">The adjacent sibling selector selects an element immediately preceded by a specified sibling element.</p><p id="-o1sczq_43">The syntax is:</p><div class="code-block" data-lang="css">
+element1 + element2 {
+    /* styles */
+}
+</div><div class="code-block" data-lang="markup">
+&lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;p&gt;Learning CSS is pure fun&lt;/p&gt;
+&lt;p&gt;Another paragraph, but it won't be selected&lt;/p&gt;
+
+&lt;h1&gt;My title&lt;/h1&gt;
+&lt;p&gt;My paragraph&lt;/p&gt;
+&lt;p&gt;Another paragraph&lt;/p&gt;
+&lt;p&gt;Yet another paragraph&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+h1 + p {
+  background-color: red;
+}
+</div><figure id="-o1sczq_47"><img alt="adjacent sibling selector" src="images/adjacent-sibling-selector.png" title="adjacent sibling selector" width="889" height="509"></figure></section><section class="chapter"><h3 id="general-sibling-selector" data-toc="general-sibling-selector">General sibling selector (<code class="code" id="-o1sczq_57">~</code>)</h3><p id="-o1sczq_50">The general sibling combinator selects all siblings of an element that share the same parent and appear after the specified element.</p><p id="-o1sczq_51">The syntax is:</p><div class="code-block" data-lang="css">
+element1 ~ element2 {
+    /* styles */
+}
+</div><div class="code-block" data-lang="markup">
+&lt;span&gt;Text up above but won't be selected&lt;/span&gt;
+&lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;p&gt;Learning CSS is pure fun&lt;/p&gt;
+&lt;p&gt;Another paragraph, but it won't be selected&lt;/p&gt;
+
+&lt;h1&gt;My title&lt;/h1&gt;
+&lt;p&gt;My paragraph&lt;/p&gt;
+&lt;p&gt;Another paragraph&lt;/p&gt;
+&lt;p&gt;Yet another paragraph&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+h1 ~ p {
+  background-color: red;
+}
+</div><p id="-o1sczq_55">In the example above, the span is a sibling to the first h1 element, but it will not be selected because it's not coming after the h1.</p><figure id="-o1sczq_56"><img alt="general sibling selector" src="images/general-sibling-selectr.png" title="general sibling selector" width="895" height="590"></figure></section></section><section class="chapter"><h2 id="pseudo-classes" data-toc="pseudo-classes">Pseudo-classes</h2><p id="-o1sczq_58">Pseudo-classes are special keywords in CSS that target elements based on their state, position, or relationship to other elements.</p><section class="chapter"><h3 id="structural-pseudo-classes" data-toc="structural-pseudo-classes">Structural pseudo-classes</h3><p id="-o1sczq_62">These pseudo-classes are used to select elements based on their position in the DOM structure.</p><section class="chapter"><h4 id="first-child" data-toc="first-child"><code class="code" id="-o1sczq_73">:first-child</code></h4><p id="-o1sczq_69">Targets the first child of its parent.</p><div class="code-block" data-lang="markup">
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+    &lt;li&gt;Item 6&lt;/li&gt;
+&lt;/ol&gt;
+</div><div class="code-block" data-lang="css">
+li:first-child {
+   background-color: crimson;
+}
+</div><figure id="-o1sczq_72"><img alt="first child" src="images/first-child.png" title="first child" width="860" height="213"></figure></section><section class="chapter"><h4 id="last-child" data-toc="last-child"><code class="code" id="-o1sczq_78">:last-child</code></h4><p id="-o1sczq_75">Targets the last child of its parent.</p><div class="code-block" data-lang="css">
+li:last-child {
+   background-color: crimson;
+}
+</div><figure id="-o1sczq_77"><img alt="last child" src="images/last-child.png" title="last child" width="870" height="240"></figure></section><section class="chapter"><h4 id="nth-child-n" data-toc="nth-child-n"><code class="code" id="-o1sczq_83">:nth-child(n)</code></h4><p id="-o1sczq_80">Targets the nth child of its parent.</p><div class="code-block" data-lang="css">
+li:nth-child(3) {
+  background-color: crimson;
+}
+</div><figure id="-o1sczq_82"><img alt="nth child" src="images/n-th-child.png" title="nth child" width="863" height="205"></figure></section><section class="chapter"><h4 id="nth-last-child-n" data-toc="nth-last-child-n"><code class="code" id="-o1sczq_88">:nth-last-child(n)</code></h4><p id="-o1sczq_85">Targets the nth child from the end.</p><div class="code-block" data-lang="css">
+li:nth-last-child(2) {
+  background-color: crimson;
+}
+</div><figure id="-o1sczq_87"><img alt="nth last child" src="images/nth-last-child.png" title="nth last child" width="860" height="220"></figure></section><section class="chapter"><h4 id="only-child" data-toc="only-child"><code class="code" id="-o1sczq_94">:only-child</code></h4><p id="-o1sczq_90">Targets an element that is the only child of its parent.</p><div class="code-block" data-lang="markup">
+&lt;div&gt;
+    &lt;p&gt;Hello, world&lt;/p&gt;
+&lt;/div&gt;
+</div><div class="code-block" data-lang="css">
+p:only-child {
+  background-color: crimson;
+}
+</div><figure id="-o1sczq_93"><img alt="only child" src="images/only-child.png" title="only child" width="900" height="80"></figure></section></section><section class="chapter"><h3 id="interactive-pseudo-classes" data-toc="interactive-pseudo-classes">Interactive pseudo-classes</h3><p id="-o1sczq_95">These pseudo-classes apply styles based on user interaction.</p><p id="-o1sczq_96">Examples:</p><section class="chapter"><h4 id="hover" data-toc="hover"><code class="code" id="-o1sczq_106">:hover</code></h4><p id="-o1sczq_103">Styles an element when the user hovers on it.</p><div class="code-block" data-lang="markup">
+&lt;button&gt;Click me&lt;/button&gt;
+</div><div class="code-block" data-lang="css">
+button:hover {
+   background-color: crimson;
+}
+</div></section><section class="chapter"><h4 id="focus" data-toc="focus"><code class="code" id="-o1sczq_111">:focus</code></h4><p id="-o1sczq_108">Styles an element when it is focused, e.g., a text input.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;enter your name&quot; class=&quot;name-input&quot;&gt;
+</div><div class="code-block" data-lang="css">
+.name-input:focus {
+  background-color: #ccc;
+}
+</div></section><section class="chapter"><h4 id="active" data-toc="active"><code class="code" id="-o1sczq_116">:active</code></h4><p id="-o1sczq_113">Styles an element when it is being clicked on.</p><div class="code-block" data-lang="markup">
+&lt;button&gt;Click me&lt;/button&gt;
+</div><div class="code-block" data-lang="css">
+button:active{
+  background-color: crimson;
+}
+</div></section><section class="chapter"><h4 id="visited" data-toc="visited"><code class="code" id="-o1sczq_121">:visited</code></h4><p id="-o1sczq_118">Styles a link that the user has already visited.</p><div class="code-block" data-lang="markup">
+&lt;a href=&quot;https://google.com&quot;&gt;Open link&lt;/a&gt;
+</div><div class="code-block" data-lang="css">
+a:visited {
+  color: orange;
+}
+</div></section><section class="chapter"><h4 id="link" data-toc="link"><code class="code" id="-o1sczq_126">:link</code></h4><p id="-o1sczq_123">Styles an unvisited link.</p><div class="code-block" data-lang="markup">
+&lt;a href=&quot;https://google.com&quot;&gt;Open link&lt;/a&gt;
+</div><div class="code-block" data-lang="css">
+a:link {
+  color: orange;
+}
+</div></section></section><section class="chapter"><h3 id="form-pseudo-classes" data-toc="form-pseudo-classes">Form pseudo-classes</h3><p id="-o1sczq_127">These pseudo-classes are used for styling form elements based on their state.</p><section class="chapter"><h4 id="checked" data-toc="checked"><code class="code" id="-o1sczq_137">:checked</code></h4><p id="-o1sczq_133">Targets checked checkboxes or radio buttons.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;checkbox&quot; checked class=&quot;checkbox&quot; /&gt;
+&lt;h1&gt;Hello world&lt;/h1&gt;
+</div><div class="code-block" data-lang="css">
+.checkbox:checked + h1 {
+  color: red;
+}
+</div><figure id="-o1sczq_136"><img alt=":checked pseudo-class" src="images/checked.png" title=":checked pseudo-class" width="413" height="166"></figure></section><section class="chapter"><h4 id="disabled" data-toc="disabled"><code class="code" id="-o1sczq_143">:disabled</code></h4><p id="-o1sczq_139">Targets disabled form elements.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;username&quot; class=&quot;username&quot; disabled&gt;
+</div><div class="code-block" data-lang="css">
+.username:disabled {
+  background-color: #999;
+}
+</div><figure id="-o1sczq_142"><img alt=":disabled pseudo class" src="images/disabled-pseudo-class.png" title=":disabled pseudo class" width="415" height="83"></figure></section><section class="chapter"><h4 id="required" data-toc="required"><code class="code" id="-o1sczq_149">:required</code></h4><p id="-o1sczq_145">Targets form elements with the <code class="code" id="-o1sczq_150">required</code> attribute.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;username&quot; class=&quot;username&quot; required /&gt;
+</div><div class="code-block" data-lang="css">
+.username:required {
+  background-color: green;
+  color: white;
+}
+</div><figure id="-o1sczq_148"><img alt=":required pseudo class" src="images/required.png" title=":required pseudo class" width="344" height="82"></figure></section><section class="chapter"><h4 id="invalid" data-toc="invalid"><code class="code" id="-o1sczq_156">:invalid</code></h4><p id="-o1sczq_152">Targets form elements with invalid input.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;number&quot; max=&quot;1000&quot; placeholder=&quot;amount&quot; class=&quot;amount-input&quot; /&gt;
+</div><div class="code-block" data-lang="css">
+.amount-input:invalid {
+  background-color: red;
+}
+</div><figure id="-o1sczq_155"><img alt=":invalid pseudo class" src="images/invalid.png" title=":invalid pseudo class" width="357" height="57"></figure></section></section></section><section class="chapter"><h2 id="attribute-selectors" data-toc="attribute-selectors">Attribute selectors</h2><p id="-o1sczq_157">CSS attribute selectors allow you to target HTML elements based on their attributes and attribute values.</p><section class="chapter"><h3 id="types-of-attribute-selectors" data-toc="types-of-attribute-selectors">Types of attribute selectors</h3><section class="chapter"><h4 id="attribute" data-toc="attribute"><code class="code" id="-o1sczq_171">[attribute]</code></h4><p id="-o1sczq_166">Select elements with the specified attribute, regardless of its value.</p><p id="-o1sczq_167">Example: <code class="code" id="-o1sczq_172">[type]</code> selects all elements with a type attribute.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;username&quot; /&gt;
+&lt;input type=&quot;password&quot; placeholder=&quot;password&quot; /&gt;
+</div><div class="code-block" data-lang="css">
+[type] {
+  background-color: crimson;
+}
+</div><figure id="-o1sczq_170"><img alt="type attribute selector" src="images/type.png" title="type attribute selector" width="641" height="61"></figure></section><section class="chapter"><h4 id="attribute-value" data-toc="attribute-value"><code class="code" id="-o1sczq_179">[attribute=&quot;value&quot;]</code></h4><p id="-o1sczq_174">Select elements where the attribute's value matches exactly.</p><p id="-o1sczq_175">Example: <code class="code" id="-o1sczq_180">[type=&quot;password&quot;]</code> selects only <code class="code" id="-o1sczq_181">&lt;input&gt;</code> elements with <code class="code" id="-o1sczq_182">type=&quot;password&quot;</code>.</p><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;username&quot; /&gt;
+&lt;input type=&quot;password&quot; placeholder=&quot;password&quot; /&gt;
+</div><div class="code-block" data-lang="css">
+[type=&quot;password&quot;] {
+    background-color: crimson;
+}
+</div><figure id="-o1sczq_178"><img alt="type=&quot;value&quot;" src="images/type=value.png" title="type=&quot;value&quot;" width="635" height="63"></figure></section><section class="chapter"><h4 id="attribute-value" data-toc="attribute-value"><code class="code" id="-o1sczq_189">[attribute~=&quot;value&quot;]</code></h4><p id="-o1sczq_184">Select elements where the attribute's value is a space-separated list of words, and one of the words matches.</p><p id="-o1sczq_185">Example: <code class="code" id="-o1sczq_190">[class~=&quot;button&quot;]</code> matches elements with <code class="code" id="-o1sczq_191">class=&quot;button primary&quot;</code> or <code class="code" id="-o1sczq_192">class=&quot;secondary button&quot;</code>, but not <code class="code" id="-o1sczq_193">class=&quot;buttons&quot;</code>.</p><div class="code-block" data-lang="markup">
+&lt;button class=&quot;button&quot;&gt;just a button&lt;/button&gt;
+&lt;button class=&quot;primary button&quot;&gt;primary button&lt;/button&gt;
+&lt;button class=&quot;secondary text-white button&quot;&gt;secondary button&lt;/button&gt;
+&lt;button class=&quot;buttons&quot;&gt;action button&lt;/button&gt;
+</div><div class="code-block" data-lang="css">
+[class~=&quot;button&quot;] {
+    background-color: red;
+}
+</div><figure id="-o1sczq_188"><img alt="type~=value" src="images/type~=value.png" title="type~=value" width="754" height="60"></figure></section><section class="chapter"><h4 id="attribute-value" data-toc="attribute-value"><code class="code" id="-o1sczq_200">[attribute^=&quot;value&quot;]</code></h4><p id="-o1sczq_195">Select elements where the attribute's value starts with the specified value.</p><p id="-o1sczq_196">Example: <code class="code" id="-o1sczq_201">[href^=&quot;https&quot;]</code> matches links starting with <code class="code" id="-o1sczq_202">https</code>.</p><div class="code-block" data-lang="markup">
+&lt;a href=&quot;https://example.com&quot;&gt;Secure Link&lt;/a&gt;
+&lt;a href=&quot;https://google.com&quot;&gt;visit google&lt;/a&gt;
+&lt;a href=&quot;http://example.com&quot;&gt;Non-Secure Link&lt;/a&gt;
+</div><div class="code-block" data-lang="css">
+[href^=&quot;https&quot;] {
+    color: green;
+}
+</div><figure id="-o1sczq_199"><img alt="type^=value" src="images/type%5E=value.png" title="type^=value" width="506" height="52"></figure></section><section class="chapter"><h4 id="attribute-value" data-toc="attribute-value"><code class="code" id="-o1sczq_208">[attribute$=&quot;value&quot;]</code></h4><p id="-o1sczq_204">Select elements where the attribute's value ends with the specified value.</p><p id="-o1sczq_205">Example: <code class="code" id="-o1sczq_209">[src$=&quot;.jpg&quot;]</code> matches images with <code class="code" id="-o1sczq_210">.jpg</code> extensions.</p><div class="code-block" data-lang="markup">
+&lt;a href=&quot;https://example.com&quot;&gt;Secure Link&lt;/a&gt;
+&lt;a href=&quot;https://google.com&quot;&gt;visit google&lt;/a&gt;
+&lt;a href=&quot;https://example.net&quot;&gt;Non-Secure Link&lt;/a&gt;
+</div><div class="code-block" data-lang="markup">
+[href$=&quot;.com&quot;] {
+    color: green;
+}
+</div></section><section class="chapter"><h4 id="attribute-value" data-toc="attribute-value">[attribute*=&quot;value&quot;]</h4><p id="-o1sczq_212">Select elements where the attribute's value contains the specified value anywhere.</p><p id="-o1sczq_213">Example: [title*=&quot;important&quot;] matches elements with a title attribute containing the word &quot;important&quot; anywhere.</p><div class="code-block" data-lang="markup">
+&lt;p title=&quot;important text&quot;&gt;some important text&lt;/p&gt;
+&lt;p title=&quot;this text is also important&quot;&gt;another important text&lt;/p&gt;
+&lt;p title=&quot;some text&quot;&gt;some text&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+[title*=&quot;important&quot;] {
+    color: green;
+}
+</div><figure id="-o1sczq_216"><img alt="title*=important" src="images/titlestartequalimportant.png" title="title*=important" width="368" height="170"></figure></section></section></section><section class="chapter"><h2 id="pseudo-elements" data-toc="pseudo-elements">Pseudo-elements</h2><p id="-o1sczq_217">CSS pseudo-elements allow you to style specific parts of an element without requiring additional markup.</p><section class="chapter"><h3 id="common-pseudo-elements" data-toc="common-pseudo-elements">Common Pseudo-elements</h3><section class="chapter"><h4 id="first-line" data-toc="first-line"><code class="code" id="-o1sczq_228">::first-line</code></h4><p id="-o1sczq_224">Styles only the first line of text within a block-level element.</p><div class="code-block" data-lang="markup">
+&lt;p&gt;
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+      dignissimos reiciendis, veniam quibusdam facere, incidunt natus
+      impedit nobis quia harum facilis sint aut iste maxime? Excepturi
+      officia quos natus autem libero labore ullam, pariatur quo enim
+      quasi doloribus velit reprehenderit aliquid amet ad nemo nulla
+      nostrum! Ipsa dolorem ullam voluptatem.
+&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+p::first-line {
+  color: red;
+}
+</div><figure id="-o1sczq_227"><img alt=":first-line pseudo element" src="images/first-line-pseudo-element.png" title=":first-line pseudo element" width="745" height="209"></figure></section><section class="chapter"><h4 id="first-letter" data-toc="first-letter"><code class="code" id="-o1sczq_233">::first-letter</code></h4><p id="-o1sczq_230">Styles the first letter of the first line of a block-level element.</p><div class="code-block" data-lang="css">
+p::first-letter {
+    font-size: 48px;
+    color: crimson;
+}
+</div><figure id="-o1sczq_232"><img alt=":first-letter" src="images/first-letter.png" title=":first-letter" width="789" height="259"></figure></section><section class="chapter"><h4 id="selection" data-toc="selection"><code class="code" id="-o1sczq_239">::selection</code></h4><p id="-o1sczq_235">Styles the portion of an element that the user has selected (highlighted with the mouse or keyboard).</p><div class="code-block" data-lang="markup">
+&lt;h1&gt;title&lt;/h1&gt;
+&lt;p&gt;
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+    dignissimos reiciendis, veniam quibusdam facere, incidunt natus
+    impedit nobis quia harum facilis sint aut iste maxime? Excepturi
+    officia quos natus autem libero labore ullam, pariatur quo enim
+    quasi doloribus velit reprehenderit aliquid amet ad nemo nulla
+    nostrum! Ipsa dolorem ullam voluptatem.
+&lt;/p&gt;
+</div><div class="code-block" data-lang="css">
+h1::selection {
+    background-color: green;
+    color: white;
+}
+
+p::selection {
+    background-color: crimson;
+    color: white;
+}
+</div><figure id="-o1sczq_238"><img alt="::selection pseudo element" src="images/selection.png" title="::selection pseudo element" width="764" height="338"></figure></section><section class="chapter"><h4 id="placeholder" data-toc="placeholder"><code class="code" id="-o1sczq_244">::placeholder</code></h4><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; placeholder=&quot;enter your name&quot; class=&quot;name-input&quot;&gt;
+</div><div class="code-block" data-lang="css">
+.name-input::placeholder {
+    color: crimson;
+}
+</div><figure id="-o1sczq_243"><img alt="::placeholder pseudo element" src="images/placeholder.png" title="::placeholder pseudo element" width="327" height="57"></figure></section></section></section><div class="last-modified">Last modified: 06 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="css-gradients.html" class="navigation-links__prev">CSS Gradients</a><a href="css-text-formatting.html" class="navigation-links__next">CSS Text Formatting</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>
